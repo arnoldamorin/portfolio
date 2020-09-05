@@ -1,0 +1,95 @@
+body{
+    font-family: 'Montserrat', sans-serif;
+    width:90%;
+    margin:auto;
+    min-width:600px;
+    max-width:2000px
+}
+h1{
+    color: #E20000;
+    font-size: 50px;
+    font-weight: bold;
+}
+p{
+    color: #6A6A6A;
+    font-weight: 500;
+}
+#contacto{
+    background-image: url(../images/fondo-contacto.png);
+    background-size: 100%;     
+    background-attachment: fixed;
+    background-repeat: no-repeat;
+    background-size: cover; 
+}
+nav .nav-link{
+    color: #282828;
+    font-weight: bold;
+}
+nav .active{
+    border:1px solid #E20000;    
+}
+.nav-item{
+   
+    text-align: center;
+}
+#contacto main{
+    height: 80vh;
+}
+.btn{
+    background-color: white;
+    color: #370A6D;
+    font-weight: 550;
+    font-size: 17px;
+    padding: 12px 55px;
+    border-radius: 25px;
+}
+.btn:hover{
+    color:white;
+    background-color: #370A6D;    
+}
+.btn-pdf{
+    background-color: #E20000;
+    color: white;      
+    font-size: 15px;
+    border-radius: 20px;
+    padding: 5px 20px;     
+}
+form .form-control{
+    border-color: transparent;
+    border-radius: 10px;
+}
+footer, a{
+    color: white;
+    font-size: 14px;
+}
+footer .fa-github{
+    font-size: 28px;    
+}
+footer .fa-whatsapp{
+    color: white;
+    background-color: #370A6D;
+    font-size: 30px;
+    padding: 10px 19px;
+    border-radius: 10px 10px 0 0;
+    height: 65px;
+    width: 65px;   
+    position:fixed;
+    right: 380px;
+    bottom: 0;
+}   
+footer .fa-linkedin-in{
+    font-size: 20px;    
+    color:#ff4a49;
+    border: 0px;
+    height: 32px;
+    width: 32px;
+    background-color: white;
+    border-radius: 80px;
+    padding: 8px 0 0 0;
+    text-align: center;
+    margin: 0 8px;
+
+}
+footer .pcsuite{
+    text-underline-position: below;
+}
