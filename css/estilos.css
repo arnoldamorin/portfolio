@@ -13,6 +13,7 @@ h1{
 p{
     color: #6A6A6A;
     font-weight: 500;
+    font-size: 16px;
 }
 #contacto{
     background-image: url(../images/fondo-contacto.png);
@@ -32,7 +33,7 @@ nav .active{
    
     text-align: center;
 }
-#contacto main{
+main{
     height: 80vh;
 }
 .btn{
@@ -58,12 +59,17 @@ form .form-control{
     border-color: transparent;
     border-radius: 10px;
 }
-footer, a{
+#contacto footer, #contacto footer .a{
     color: white;
-    font-size: 14px;
+    font-size: 14px;  
 }
-footer .fa-github{
-    font-size: 28px;    
+#contacto footer .mail{
+    color: white;
+}
+
+#contacto footer .fa-github{
+    font-size: 30px;    
+    color: white;
 }
 footer .fa-whatsapp{
     color: white;
@@ -77,19 +83,93 @@ footer .fa-whatsapp{
     right: 380px;
     bottom: 0;
 }   
-footer .fa-linkedin-in{
+#contacto footer .fa-linkedin-in{
     font-size: 20px;    
+    background-color: white;
+    text-align: center;
     color:#ff4a49;
     border: 0px;
-    height: 32px;
-    width: 32px;
-    background-color: white;
+    height: 30px;
+    width: 30px;    
     border-radius: 80px;
-    padding: 8px 0 0 0;
-    text-align: center;
+    padding: 8px 0 0 0;    
     margin: 0 8px;
-
 }
 footer .pcsuite{
     text-underline-position: below;
+}
+
+#proyectos{
+    background-image: url(../images/fondo-proyectos.png);
+    background-size: 100%;     
+    background-repeat: no-repeat;
+    background-position-y: -180px;
+    background-position-x: 0;
+}
+#proyectos .btn-p1{
+    background-color: #E20000;
+    color: white;
+    font-size: 10px;
+    font-weight: bold;
+    padding: 10px 20px;
+
+}
+#proyectos .btn-p2{
+    color: #E20000;
+    font-size: 10px;
+    font-weight: 800;      
+    }
+
+#proyectos h2{
+    color: white;
+    font-size: 16px;
+    text-transform: uppercase;
+    padding:0;
+    margin:0;
+}
+#proyectos p{
+    font-size: 13px;
+}
+#proyectos img{
+    height: 177px;
+}
+#proyectos .card{
+    border-radius: 20px;
+    border-color: white;
+    
+}
+#proyectos .color-gradiente{   
+    color: white;
+    padding:20px;
+    background: rgba(107,35,35,1);
+    background: -moz-linear-gradient(left, rgba(107,35,35,1) 0%, rgba(231,55,39,1) 69%, rgba(231,55,39,1) 100%);
+    background: -webkit-gradient(left top, right top, color-stop(0%, rgba(107,35,35,1)), color-stop(69%, rgba(231,55,39,1)), color-stop(100%, rgba(231,55,39,1)));
+    background: -webkit-linear-gradient(left, rgba(107,35,35,1) 0%, rgba(231,55,39,1) 69%, rgba(231,55,39,1) 100%);
+    background: -o-linear-gradient(left, rgba(107,35,35,1) 0%, rgba(231,55,39,1) 69%, rgba(231,55,39,1) 100%);
+    background: -ms-linear-gradient(left, rgba(107,35,35,1) 0%, rgba(231,55,39,1) 69%, rgba(231,55,39,1) 100%);
+    background: linear-gradient(to right, rgba(107,35,35,1) 0%, rgba(231,55,39,1) 69%, rgba(231,55,39,1) 100%);
+    filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#6b2323', endColorstr='#e73727', GradientType=1 );
+}
+#proyectos footer, #proyecto a{
+    color:#E20000;
+    font-size: 20px;  
+}
+#proyectos footer .fa-github{
+    font-size: 30px; 
+    color: #E20000;   
+}
+#proyectos footer .fa-linkedin-in{
+ font-size: 20px;    
+    background-color: #E20000;
+    text-align: center;
+    color:white;
+    border: 0px;
+    height: 30px;
+    width: 30px;    
+    border-radius: 80px;
+    padding: 8px 0 0 0;    
+    margin: 0 8px;     
+}
+#proyectos footer .mail{
+    color: #E20000;
 }
