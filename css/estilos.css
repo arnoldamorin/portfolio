@@ -99,7 +99,7 @@ footer .pcsuite{
     text-underline-position: below;
 }
 
-#proyectos{
+#proyectos,#sobre-mi{
     background-image: url(../images/fondo-proyectos.png);
     background-size: 100%;     
     background-repeat: no-repeat;
@@ -172,4 +172,57 @@ footer .pcsuite{
 }
 #proyectos footer .mail{
     color: #E20000;
+}
+
+/*Sobre mi perros*/
+#sobre-mi .color-gradiente{   
+    color: white; 
+    background: rgba(107,35,35,1);
+    background: -moz-linear-gradient(left, rgba(107,35,35,1) 0%, rgba(231,55,39,1) 69%, rgba(231,55,39,1) 100%);
+    background: -webkit-gradient(left top, right top, color-stop(0%, rgba(107,35,35,1)), color-stop(69%, rgba(231,55,39,1)), color-stop(100%, rgba(231,55,39,1)));
+    background: -webkit-linear-gradient(left, rgba(107,35,35,1) 0%, rgba(231,55,39,1) 69%, rgba(231,55,39,1) 100%);
+    background: -o-linear-gradient(left, rgba(107,35,35,1) 0%, rgba(231,55,39,1) 69%, rgba(231,55,39,1) 100%);
+    background: -ms-linear-gradient(left, rgba(107,35,35,1) 0%, rgba(231,55,39,1) 69%, rgba(231,55,39,1) 100%);
+    background: linear-gradient(to right, rgba(107,35,35,1) 0%, rgba(231,55,39,1) 69%, rgba(231,55,39,1) 100%);
+    filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#6b2323', endColorstr='#e73727', GradientType=1 );
+}
+#sobre-mi .fa-github{
+    font-size: 30px; 
+    color: #E20000;   
+}
+#sobre-mi .fa-linkedin-in{
+    font-size: 20px;    
+    background-color: #E20000;
+    text-align: center;
+    color:white;
+    border: 0px;
+    height: 30px;
+    width: 30px;    
+    border-radius: 80px;
+    padding: 8px 0 0 0;    
+    margin: 0 8px;     
+}
+#sobre-mi .FP{
+    height: 340px;
+    width: auto;
+}
+#sobre-mi section .iconos{
+    color: #282828;
+    text-align: center;
+    font-size: 18px;    
+}
+#sobre-mi section .card{
+    border-radius: 20px; 
+    margin-bottom: 30px;  
+    border-color: white;
+}
+#sobre-mi .fa-comment-alt{
+    color: white;
+    background:#370A6D;
+    font-size: 100px;
+    border-radius: 15px;
+    padding:1px;
+}
+#sobre-mi section .titulosnegrita{
+    font-weight: bold;
 }
