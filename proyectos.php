@@ -51,7 +51,7 @@ include_once("menu.php");?>
                         </div>
                         <div class="row p-3">
                             <div class="col-sm-6 col-6">
-                                <a href="../php/login/index.php" target="_blank" class="btn-p1 rounded-pill">VER PROYECTO</a>
+                                <a href="../php/login/login.php" target="_blank" class="btn-p1 rounded-pill">VER PROYECTO</a>
                             </div>
                             <div class="col-sm-6 col-6 text-right">
                                 <a href="#" class="btn-p2 px-3">CÓDIGO FUENTE</a>
