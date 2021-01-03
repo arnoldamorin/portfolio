@@ -527,8 +527,7 @@ footer .fa-whatsapp{
         background-color:  #EDEDED; 
     }
 }
-
-/*index*/
+/*--------------------------------Index--------------------------------*/
 @media(max-width:576px){
     #index main{
         height: 125vh;

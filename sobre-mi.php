@@ -29,7 +29,7 @@ include_once("menu.php");?>
                         </div>
                     </div>
                 </div>
-                <div class="col-sm-4 col-12 offset-1">
+                <div class="col-sm-4 col-12">
                     <img src="images/arnold.png" alt="sobre-mi" title="Arnold Amorin" class="FP img-fluid img-circle">
                 </div>
             </div>
