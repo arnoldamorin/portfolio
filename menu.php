@@ -38,7 +38,7 @@
                         </li>
                         <li class="nav-item pr-sm-5">
                             <a class="nav-link <?php echo $pg == "proyectos"? "active px-sm-3 rounded-pill" : ""; ?>"
-                                href="proyectos.php">Proyecto</a>
+                                href="proyectos.php">Proyectos</a>
                         </li>
                         <li class="nav-item pr-sm-5">
                             <a class="nav-link <?php echo $pg == "contacto"? "active px-sm-3 rounded-pill" : ""; ?>"

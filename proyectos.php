@@ -9,28 +9,24 @@ include_once("menu.php");?>
             </div>
             <div class="row">
                 <div class="col-sm-8 col-12">
-                    <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Suscipit facilis soluta quibusdam
-                        optio,perferendis ratione a iste accusantium corrupti enim molestias dignissimos sed aliquam
-                        maiores
-                        dolores
-                        totam non quam minus!</p>
+                    <p>Estos son algunos trabajos realizados durante el curso de Desarrollador web Full Stack</p>
                 </div>
             </div>
             <div class="row">
                 <div class="col-sm-4 col-12 ">
                     <div class="card shadow-lg m-1">
-                        <img src="../PORTFOLIO/images/clientes.png" alt="ABM Clientes" title="ABM Clientes"
+                        <img src="images/clientes.png" alt="ABM Clientes" title="ABM Clientes"
                             class="img-fluid">
                         <div class="col-12 color-gradiente py-3">
                             <h2 class="card-title">ABM CLIENTES</h2>
                         </div>
                         <div class="col-12">
                             <p class="card-text p-3 mb-3">Alta, Baja, modificiacion de un registro de clientes
-                                empleando:.REalizado en HTML, CSS, PHP, Bootstrap y Json.</p>
+                                empleando: Realizado en HTML, CSS, PHP, Bootstrap y Json.</p>
                         </div>
                         <div class="row p-3">
                             <div class="col-sm-6 col-6">
-                                <a href="../php/abmclientes.php" target="_blank" class="btn-p1 rounded-pill">VER ONLINE</a>
+                                <a href="Proyectos/AbmClientes/abmclientes.php" target="_blank" class="btn-p1 rounded-pill">VER ONLINE</a>
                             </div>
                             <div class="col-sm-6 col-6 text-right">
                                 <a href="#" class="btn-p2 px-3">CÓDIGO FUENTE</a>
@@ -40,7 +36,7 @@ include_once("menu.php");?>
                 </div>
                 <div class="col-sm-4 col-12">
                     <div class="card shadow-lg m-1">
-                        <img src="../PORTFOLIO/images/svg.png" alt="Sistema de Gestión de Ventas"
+                        <img src="images/svg.png" alt="Sistema de Gestión de Ventas"
                             title="Sistema de Gestión de Ventas" class="img-fluid">
                         <div class="col-12 color-gradiente py-3">
                             <h2 class="card-title">SISTEMA DE GESTIÓN DE VENTAS</h2>
@@ -51,7 +47,7 @@ include_once("menu.php");?>
                         </div>
                         <div class="row p-3">
                             <div class="col-sm-6 col-6">
-                                <a href="../php/login/login.php" target="_blank" class="btn-p1 rounded-pill">VER PROYECTO</a>
+                                <a href="Proyectos/SGV/index.php" target="_blank" class="btn-p1 rounded-pill">VER PROYECTO</a>
                             </div>
                             <div class="col-sm-6 col-6 text-right">
                                 <a href="#" class="btn-p2 px-3">CÓDIGO FUENTE</a>
@@ -61,7 +57,7 @@ include_once("menu.php");?>
                 </div>
                 <div class="col-sm-4 col-12">
                     <div class="card shadow-lg m-1">
-                        <img src="../PORTFOLIO/images/proyectoIntegrador.png" alt="Proyecto" title="Proyecto"
+                        <img src="images/proyectoIntegrador.png" alt="Proyecto" title="Proyecto"
                             class="img-fluid">
                         <div class="col-12 color-gradiente py-3">
                             <h2 class="card-title">PROYECTO INTEGRADOR</h2>
