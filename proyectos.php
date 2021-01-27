@@ -9,7 +9,7 @@ include_once("menu.php");?>
             </div>
             <div class="row">
                 <div class="col-sm-8 col-12">
-                    <p>Estos son algunos trabajos realizados durante el curso de Desarrollador web Full Stack</p>
+                    <p>Estos son algunos de mis trabajos realizados durante el curso de Desarrollador web Full Stack</p>
                 </div>
             </div>
             <div class="row">
@@ -57,7 +57,7 @@ include_once("menu.php");?>
                 </div>
                 <div class="col-sm-4 col-12">
                     <div class="card shadow-lg m-1">
-                        <img src="images/proyectoIntegrador.png" alt="Proyecto" title="Proyecto"
+                        <img src="images/proyectoIntegrador.png" alt="Proyecto" title="Proyecto Integrador"
                             class="img-fluid">
                         <div class="col-12 color-gradiente py-3">
                             <h2 class="card-title">PROYECTO INTEGRADOR</h2>

@@ -6,11 +6,11 @@
                 <div class="col-sm-3 col-12">
                     <a href="https://github.com/arnoldamorin" target="_blank" title="Github"><i
                             class="fab fa-github"></i></a>
-                    <a href="https://www.linkedin.com/in/arnold-amorin-0382bb123/" target="_blank" title="Linkedin"><i
+                    <a href="https://www.linkedin.com/in/arnold-amorin/" target="_blank" title="Linkedin"><i
                             class="fab fa-linkedin-in"></i></a>
                 </div>
-                <div class="col-sm-3 col-12"> Sponsor <a href="https://depcsuite.com" target="_blank"
-                        title="DEPCSUITE"></a> <u>DePC Suite</u>
+                <div class="col-sm-3 col-12"> Sponsor <a class="mail" href="https://depcsuite.com/" target="_blank"
+                        title="DEPCSUITE"><u class="depc">DePC Suite</u></a> 
                 </div>
                 <div class="col-sm-3 col-12">
                     <a class="mail" href="mailto:info@depcsuite.com">info@arnoldamorin.com.ar</a>

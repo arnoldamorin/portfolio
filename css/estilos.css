@@ -219,14 +219,11 @@ footer .fa-whatsapp{
         bottom: 0;
     }
 }
-/*--------------------------------Proyectos--------------------------------*/
-#proyectos,#sobre-mi .btn-pdf{
-    background-color: white;
-    color:#E20000;      
-    font-size: 15px;
-    border-radius: 20px;
-    padding: 5px 20px;     
+footer .depc{
+
 }
+/*--------------------------------Proyectos--------------------------------*/
+
 #proyectos,#sobre-mi{
     background-image: url(../images/fondo-proyectos.png);
     background-size: 100%;     
@@ -363,7 +360,7 @@ footer .fa-whatsapp{
         text-align: center;
     }
 }
-/*Sobre mi perros*/
+/*--------------------------------Sobre mi--------------------------------*/
 #sobre-mi footer{
     background-color: #EDEDED;  
        
@@ -520,8 +517,21 @@ footer .fa-whatsapp{
     font-size: 10px;    
     padding: 5px 20px;     
 }
+
 @media(max-width:576px){
     #sobre-mi .btn-exp{  
+        font-size: 15px;  
+        padding: 10px 25px;     
+    }
+}
+#sobre-mi .btn-est{
+    background-color: #E20000;
+    color: white;      
+    font-size: 10px;    
+    padding: 5px 20px;     
+}
+@media(max-width:576px){
+    #sobre-mi .btn-est{  
         font-size: 15px;  
         padding: 10px 25px;     
     }

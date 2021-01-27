@@ -66,10 +66,7 @@
       </div>
       <div class="row">
         <div class="col-sm-6 col-12">          
-            <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Suscipit facilis soluta quibusdam
-              optio,perferendis ratione a iste accusantium corrupti enim molestias dignissimos sed aliquam maiores
-              dolores
-              ttam non quam minus!</p>
+            <p>Si deseas contactarte conmingo podes enviarme un mail con este formulario!</p>
         </div>
         <div class="col-sm-6 col-12">
           <form action="" method="POST">
