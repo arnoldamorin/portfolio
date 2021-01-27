@@ -15,7 +15,7 @@ include_once("menu.php");?>
                 <div class="row">
                     <div class="col-sm-12 col-12 d-flex justify-content-center">
                         <div>
-                            <a href="proyectos.html" class="trabajo rounded-pill">MIRÁ MI TRABAJO</i></a>
+                            <a href="proyectos.php" class="trabajo rounded-pill">MIRÁ MI TRABAJO</i></a>
                         </div>
                     </div>
                 </div>
