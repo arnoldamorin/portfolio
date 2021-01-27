@@ -12,16 +12,17 @@ $cliente = new Cliente();
 $cliente->cargarFormulario($_REQUEST);
 
 $eliminacion = false;
-if($_POST){
+if ($_POST) {
 
-    if(isset($_POST["btnGuardar"])){
-        if(isset($_GET["id"]) && $_GET["id"] > 0){
+    if (isset($_POST["btnGuardar"])) {
+        if (isset($_GET["id"]) && $_GET["id"] > 0) {
             //actualizo un cliente existente
             $cliente->actualizar();
-           
+            $mensajeSuccess = "Cliente actualizado correctamente";
         } else {
             //Es nuevo
             $cliente->insertar();
+            $mensajeSuccess = "Cliente guardado correctamente";
         }
         /*if(isset($_POST["txtTipo"])){
             $domicilio = new Domicilio();
@@ -34,17 +35,22 @@ if($_POST){
                 $domicilio->insertar();
             }
         }*/
-    } else if(isset($_POST["btnBorrar"])){
+    } else if (isset($_POST["btnBorrar"])) {
+        $total = $cliente->obtenerClientesVentas($cliente->idcliente);
+        if ($total > 0) {
+            $mensajeError = "No se pueden eliminar clientes con ventas asociadadas";
+        } else {
+            $cliente->eliminar();
+            $mensajeSuccess = "Cliente eliminado correctamente";
+        }
         //$domicilio = new Domicilio();
-        //$domicilio->eliminarPorCliente($cliente->idcliente);
-        $cliente->eliminar();
-        $eliminacion = true;
-    }   
+        //$domicilio->eliminarPorCliente($cliente->idcliente);       
+    }
 }
-if(isset($_GET["id"]) && $_GET["id"] > 0 ){
+if (isset($_GET["id"]) && $_GET["id"] > 0) {
     $cliente->id = $_GET["id"];
-    $cliente->obtenerPorId();   
-} 
+    $cliente->obtenerPorId();
+}
 ?>
 <!DOCTYPE html>
 <html lang="es">
@@ -54,9 +60,7 @@ if(isset($_GET["id"]) && $_GET["id"] > 0 ){
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <!-- Custom fonts for this template-->
     <link href="vendor/fontawesome-free/css/all.min.css" rel="stylesheet" type="text/css">
-    <link
-        href="https://fonts.googleapis.com/css?family=Nunito:200,200i,300,300i,400,400i,600,600i,700,700i,800,800i,900,900i"
-        rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css?family=Nunito:200,200i,300,300i,400,400i,600,600i,700,700i,800,800i,900,900i" rel="stylesheet">
 
     <!-- Custom styles for this template-->
     <link href="css/sb-admin-2.min.css" rel="stylesheet">
@@ -67,7 +71,7 @@ if(isset($_GET["id"]) && $_GET["id"] > 0 ){
 
     <!-- Page Wrapper -->
     <div id="wrapper">
-        <?php include 'menu.php';?>
+        <?php include 'menu.php'; ?>
         <form method="post" enctype="multipart/form-data" action="">
             <div class="container-fluid">
                 <!-- Page Heading -->
@@ -76,101 +80,42 @@ if(isset($_GET["id"]) && $_GET["id"] > 0 ){
                     <div class="col-12 mb-3">
                         <a href="clientes-listado.php" class="btn btn-primary mr-2">Listado</a>
                         <a href="cliente-formulario.php" class="btn btn-primary mr-2">Nuevo</a>
-                        <button type="submit" class="btn btn-success mr-2" id="btnGuardar"
-                            name="btnGuardar">Guardar</button>
+                        <button type="submit" class="btn btn-success mr-2" id="btnGuardar" name="btnGuardar">Guardar</button>
                         <button type="submit" class="btn btn-danger" id="btnBorrar" name="btnBorrar">Borrar</button>
                     </div>
                 </div>
                 <div class="row">
                     <div class="col-6 form-group">
                         <label for="txtNombre">Nombre:</label>
-                        <input type="text" required="" class="form-control" name="txtNombre" id="txtNombre"
-                            value="<?php echo isset($_GET["id"]) ? $cliente->nombre :"" ?>">
+                        <input type="text" required="" class="form-control" name="txtNombre" id="txtNombre" value="<?php echo isset($_GET["id"]) ? $cliente->nombre : "" ?>">
                     </div>
                     <div class="col-6 form-group">
                         <label for="txtCuit">CUIT:</label>
-                        <input type="text" required="" class="form-control" name="txtCuit" id="txtCuit"
-                            value="<?php echo isset($_GET["id"]) ? $cliente->cuit:"" ?>" maxlength="11">
+                        <input type="text" required="" class="form-control" name="txtCuit" id="txtCuit" value="<?php echo isset($_GET["id"]) ? $cliente->cuit : "" ?>" maxlength="11">
                     </div>
                     <div class="col-6 form-group">
                         <label for="txtFechaNac">Fecha de nacimiento:</label>
-                        <input type="date" class="form-control" name="txtFechaNac" id="txtFechaNac"
-                            value="<?php  echo isset($_GET["id"]) ? date_format(date_create($cliente->fecha_nac),"Y-m-d"):""?>">
+                        <input type="date" class="form-control" name="txtFechaNac" id="txtFechaNac" value="<?php echo isset($_GET["id"]) ? date_format(date_create($cliente->fecha_nac), "Y-m-d") : "" ?>">
                     </div>
                     <div class="col-6 form-group">
                         <label for="txtTelefono">Teléfono:</label>
-                        <input type="number" class="form-control" name="txtTelefono" id="txtTelefono"
-                            value="<?php echo isset($_GET["id"]) ? $cliente->telefono:"" ?>">
+                        <input type="number" class="form-control" name="txtTelefono" id="txtTelefono" value="<?php echo isset($_GET["id"]) ? $cliente->telefono : "" ?>">
                     </div>
                     <div class="col-6 form-group">
                         <label for="txtCorreo">Correo:</label>
-                        <input type="" class="form-control" name="txtCorreo" id="txtCorreo" required=""
-                            value="<?php echo isset($_GET["id"]) ? $cliente->correo:"" ?>">
-                    </div>
-                </div>
-                <div class="row">
-                    <div class="col-12">
-                        <div class="card mb-3">
-                            <div class="card-header">
-                                <i class="fa fa-table"></i> Domicilios
-                                <div class="pull-right">
-                                    <button type="button" class="btn btn-secondary" data-toggle="modal"
-                                        data-target="#modalDomicilio">Agregar</button>
-                                </div>
-                            </div>
-                            <div class="panel-body">
-                                <div id="grilla_wrapper" class="dataTables_wrapper no-footer">
-                                    <div id="grilla_processing" class="dataTables_processing" style="display: none;">
-                                        Processing...</div>
-                                    <table id="grilla" class="display dataTable no-footer" style="width: 98%;"
-                                        role="grid" aria-describedby="grilla_info">
-                                        <thead>
-                                            <tr role="row">
-                                                <th class="sorting_asc" tabindex="0" aria-controls="grilla" rowspan="1"
-                                                    colspan="1" aria-label="Tipo: activate to sort column descending"
-                                                    aria-sort="ascending" style="width: 252px;">Tipo</th>
-                                                <th class="sorting" tabindex="0" aria-controls="grilla" rowspan="1"
-                                                    colspan="1"
-                                                    aria-label="Provincia: activate to sort column ascending"
-                                                    style="width: 393px;">Provincia</th>
-                                                <th class="sorting" tabindex="0" aria-controls="grilla" rowspan="1"
-                                                    colspan="1"
-                                                    aria-label="Localidad: activate to sort column ascending"
-                                                    style="width: 409px;">Localidad</th>
-                                                <th class="sorting" tabindex="0" aria-controls="grilla" rowspan="1"
-                                                    colspan="1"
-                                                    aria-label="Dirección: activate to sort column ascending"
-                                                    style="width: 398px;">Dirección</th>
-                                            </tr>
-                                        </thead>
-                                        <tbody>
-                                            <tr class="odd">
-                                                <td valign="top" colspan="4" class="dataTables_empty">No data available
-                                                    in table</td>
-                                            </tr>
-                                        </tbody>
-                                    </table>
-                                    <div class="dataTables_info" id="grilla_info" role="status" aria-live="polite">
-                                        Showing 0 to 0 of 0 entries</div>
-                                </div>
-                            </div>
-                        </div>
+                        <input type="" class="form-control" name="txtCorreo" id="txtCorreo" required="" value="<?php echo isset($_GET["id"]) ? $cliente->correo : "" ?>">
                     </div>
                 </div>
             </div>
         </form>
-        <div class="row">
-            <div class="col-12">
-                <?php if ($eliminacion) {?>
-                <div class="alert alert-danger" role="alert">
-                    <strong>Cliente eliminado con exito!</strong>
-                </div>
-                <?php $eliminacion=false; } ?>
-            </div>
+        <?php if (isset($mensajeSuccess)) { ?>
+            <div class="alert alert-success col-6" role="alert"><?= $mensajeSuccess ?></div>
 
-        </div>
+        <?php }  ?>
+        <?php if (isset($mensajeError)) { ?>
+            <div class="alert alert-danger col-6" role="alert"><?= $mensajeError ?></div>
 
-
+        <?php }  ?>
     </div>
     <!-- Bootstrap core JavaScript-->
     <script src="vendor/jquery/jquery.min.js"></script>

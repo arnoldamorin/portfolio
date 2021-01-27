@@ -28,7 +28,7 @@ $aProductos =$producto->obtenerTodos();
         <div class="container-fluid">
             <!-- Page Heading -->
             <h1 class="h3 mb-4 text-gray-800">Listado de productos</h1>
-                <a href="producto-formulario.php" class="btn btn-primary mr-2">Nuevo</a>
+                <a href="producto-formulario.php" class="btn btn-primary mr-2 mb-2">Nuevo</a>
                     <table class="table table-hover">           
                             <tr>
                                 <th>Foto</th>
@@ -44,7 +44,7 @@ $aProductos =$producto->obtenerTodos();
                                     <td><?php echo $elemento->cantidad;?></td>
                                     <td><?php echo $elemento->precio;?></td>                          
                                     <td>
-                                        <a href="producto-formulario.php?id=<?php echo $elemento->idproducto; ?>"><i class="fas fa-search"style="color:blue"></i></a></td>                                                
+                                    <a href="producto-formulario.php?id=<?php echo $elemento->idproducto; ?>"><i class="fas fa-edit"style="color:blue"></i></a></td>                                                
                                 </tr>  
                             <?php endforeach;?>            
                     </table>       

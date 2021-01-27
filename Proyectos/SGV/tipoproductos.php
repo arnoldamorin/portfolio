@@ -27,7 +27,7 @@ $atipoproducto =$tipoproducto->obtenerTodos();
         <div class="container-fluid">
         <!-- Page Heading -->
         <h1 class="h3 mb-4 text-gray-800">Listado de tipos de producto</h1>
-        <a href="tipoproducto-formulario.php" class="btn btn-primary mr-2">Nuevo</a>
+        <a href="tipoproducto-formulario.php" class="btn btn-primary mr-2 mb-2">Nuevo</a>
             <table class="table table-hover mb-3">           
                 <tr>                
                     <th>Nombre</th>                                       
@@ -35,9 +35,9 @@ $atipoproducto =$tipoproducto->obtenerTodos();
                 </tr>        
                 <tr>
                 <?php foreach ($atipoproducto as $entidad):?>
-                    <tr>                        
+                    <tr>                       
                         <td><?php echo $entidad->nombre;?></td>                          
-                        <td><a href="tipoproducto-formulario.php?id=<?php echo $entidad->idtipoproducto; ?>"><i class="fas fa-search"style="color:blue"></i></a></td>                                                
+                        <td><a href="tipoproducto-formulario.php?id=<?php echo $entidad->idtipoproducto; ?>"><i class="fas fa-edit"style="color:blue"></i></a></td>                                                
                     </tr>  
                 <?php endforeach;?>           
             </table>  

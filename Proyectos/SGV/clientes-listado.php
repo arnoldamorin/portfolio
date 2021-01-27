@@ -27,7 +27,7 @@ $aClientes =$cliente->obtenerTodos();
     <div class="container-fluid">
         <!-- Page Heading -->
         <h1 class="h3 mb-4 text-gray-800">Listado de ventas</h1>
-            <a href="cliente-formulario.php" class="btn btn-primary mr-2">Nuevo</a>
+            <a href="cliente-formulario.php" class="btn btn-primary mr-2 mb-2">Nuevo</a>
             <table class="table table-hover">           
                     <tr>
                         <th>CUIT</th>
@@ -47,7 +47,7 @@ $aClientes =$cliente->obtenerTodos();
                             <td><?php echo $cliente->correo;?></td>
                             <td></td>
                             <td>
-                                <a href="cliente-formulario.php?id=<?php echo $cliente->idcliente; ?>"><i class="fas fa-search"style="color:blue"></i></a></td>                                                
+                                <a href="cliente-formulario.php?id=<?php echo $cliente->idcliente; ?>"><i class="fas fa-edit"style="color:blue"></i></a></td>                                                
                         </tr>  
                     <?php endforeach;?>                        
             </table>

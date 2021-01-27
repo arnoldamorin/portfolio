@@ -32,7 +32,7 @@ $aVentas =$venta->obtenerTodos();
 
         <!-- Page Heading -->
         <h1 class="h3 mb-4 text-gray-800">Listado de ventas</h1>
-        <a href="venta-formulario.php" class="btn btn-primary mr-2">Nuevo</a>
+        <a href="venta-formulario.php" class="btn btn-primary mr-2 mb-2">Nuevo</a>
             <table class="table table-hover">           
                     <tr>
                         <th>Fecha</th>
@@ -50,7 +50,7 @@ $aVentas =$venta->obtenerTodos();
                         <td><?php echo $elemento->nombre_cliente;?></td>                          
                         <td><?php echo $elemento->total;?></td>                          
                         <td>
-                            <a href="venta-formulario.php?id=<?php echo $elemento->idventa; ?>"><i class="fas fa-search"style="color:blue"></i></a></td>                                                
+                            <a href="venta-formulario.php?id=<?php echo $elemento->idventa; ?>"><i class="fas fa-edit"style="color:blue"></i></a></td>                                                
                     </tr>  
                     <?php endforeach;?>                
                 </table>    

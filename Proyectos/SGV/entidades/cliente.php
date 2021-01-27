@@ -16,7 +16,7 @@
         }
         public function __set($atributo, $valor){
             return $this->$atributo = $valor;
-            return this;
+            
         }
         public function cargarFormulario($request){
             $this->idcliente = isset($request["id"])? $request["id"] : "";
@@ -143,5 +143,21 @@
                 }
             
         }
+        public function obtenerClientesVentas($id){
+            $mysqli = new mysqli(config::BBDD_HOST, config::BBDD_USUARIO, config::BBDD_CLAVE, config::BBDD_NOMBRE);  
+            $sql = "SELECT count(V.fk_idcliente) AS totalcliente                      
+                    FROM clientes C inner join Ventas V on V.fk_idcliente = C.idcliente
+                    WHERE C.idcliente = $id";
+                    
+            if (!$mysqli->query($sql)){
+                printf("Error en query: %s\n", $mysqli->error . " " .$sql);             
+            } 
+            $resultado = $mysqli->query($sql);         
+            $fila = $resultado->fetch_assoc();
+            return $fila["totalcliente"];                
+                  
+        }
+
+        
     }
 ?>
