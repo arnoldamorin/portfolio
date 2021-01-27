@@ -46,9 +46,11 @@
                                 href="contacto.php">Contacto</a>
                         </li>
                     </ul>
+                    <?php if ($pg != "sobre-mi"){?>
                     <form class="form-inline my-sm-2 my-lg-0">
-                        <a href="" class="btn-pdf">DESCARGAR MI CV <i class="fas fa-download"></i></a>
+                        <a href="CV_ARNOLD_AMORIN.pdf" download="CV_ARNOLD_AMORIN.pdf"class="btn-pdf">DESCARGAR MI CV <i class="fas fa-download"></i></a>
                     </form>
+                    <?php }?>
                 </div>
             </nav>
         </div>

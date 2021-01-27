@@ -66,7 +66,7 @@
       </div>
       <div class="row">
         <div class="col-sm-6 col-12">          
-            <p>Si deseas contactarte conmingo podes enviarme un mail con este formulario!</p>
+            <p>Si deseas contactarte conmingo podes enviarme un mail con este formulario</p>
         </div>
         <div class="col-sm-6 col-12">
           <form action="" method="POST">

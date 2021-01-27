@@ -20,7 +20,7 @@ include_once("menu.php");?>
                                 </div>
                                 <div class="col-sm-6 col-6 ml-3">
                                     <form class="form-inline">
-                                        <a href="" class="btn-pdf">DESCARGÁ MI CV <i class="fas fa-download"></i></a>
+                                        <a href="CV_ARNOLD_AMORIN.pdf" download="CV_ARNOLD_AMORIN.pdf" class="btn-pdf">DESCARGÁ MI CV <i class="fas fa-download"></i></a>
                                     </form>
                                 </div>
                             </div>
