@@ -13,12 +13,12 @@
       $mail = new PHPMailer();
       $mail->IsSMTP();
       $mail->SMTPAuth = true;
-      $mail->Host = "mail.dominio.com"; // SMTP a utilizar
-      $mail->Username = "info@dominio.com.ar"; // Correo completo a utilizar
-      $mail->Password = "aqui va la clave de tu correo";
+      $mail->Host = "mail.depcsuite.com"; // SMTP a utilizar
+      $mail->Username = "info@arnoldamorin.com.ar"; // Correo completo a utilizar
+      $mail->Password = "4RN0LD.5901?";
       $mail->Port = 25;
-      $mail->From = "info@dominio.com.ar"; //Desde la cuenta donde enviamos
-      $mail->FromName = "Tu nombre a mostrar";
+      $mail->From = "info@arnoldamorin.com.ar"; //Desde la cuenta donde enviamos
+      $mail->FromName = "Arnold Amorin";
       $mail->IsHTML(true);
       $mail->SMTPOptions = array(
                   'ssl' => array(
@@ -30,7 +30,7 @@
 
       //Destinatarios
       $mail->addAddress($correo);
-      $mail->addBCC("otrocorreo@gmail.com"); //Copia oculta
+      $mail->addBCC("aamorin.ar@gmail.com"); //Copia oculta
       $mail->Subject = utf8_decode("Contacto página Web");
       $mail->Body = "Recibimos tu consulta, te responderemos a la brevedad.";
       if(!$mail->Send()){
@@ -39,7 +39,7 @@
       $mail->ClearAllRecipients(); //Borra los destinatarios
 
       //Envía ahora un correo a nosotros con los datos de la persona
-      $mail->addAddress("info@dominio.com.ar");
+      $mail->addAddress("info@arnoldamorin.com.ar");
       $mail->Subject = utf8_decode("Recibiste un mensaje desde tu página Web");
       $mail->Body = "Te escribio $nombre cuyo correo es $correo, con el asunto $asunto y el siguiente mensaje:<br><br>$mensaje";
      
