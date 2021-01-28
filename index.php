@@ -7,8 +7,8 @@ include_once("menu.php");?>
                     <div class="col-sm-12 col-12 d-flex justify-content-center">
                         <div class="card">
                             <p class="arnold rounded-pill">Hola mi nombre es <span
-                                    style="text-underline-position: below; font-weight: bold;">Arnold.</span>
-                                soy desarrollador full stack. | <i class="fas fa-search"></i></p>
+                                    style="text-underline-position: below; font-weight: bold;">Arnold,</span>
+                                soy desarrollador full stack.<i class="fas fa-search"></i></p>
                         </div>
                     </div>
                 </div>

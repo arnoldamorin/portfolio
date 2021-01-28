@@ -16,8 +16,8 @@ include_once("menu.php"); ?>
                             <div class="col-sm-1 col-1 mr-sm-3">
                                 <a href="https://www.linkedin.com/in/arnold-amorin-0382bb123/" target="_blank" title="Linkedin"><i class="fab fa-linkedin-in"></i></a>
                             </div>
-                            <div class="col-sm-6 col-6 ml-3">
-                                <form class="form-inline">
+                            <div class="col-sm-6 col-7 ml-3">
+                                <form class="form-inline d-flex justify-content-between">
                                     <a href="CV_ARNOLD_AMORIN.pdf" download="CV_ARNOLD_AMORIN.pdf" class="btn-pdf">DESCARGÁ MI CV <i class="fas fa-download"></i></a>
                                 </form>
                             </div>
@@ -102,13 +102,13 @@ include_once("menu.php"); ?>
                     <div class="col-sm-2 col-5 text-center">
                         <div class="card">
                             <img class="img-fluid" src="images/apache.png">
-                            <h3 class="iconos  py-4">Apache</h3>
+                            <h3 class="iconos py-4">Apache</h3>
                         </div>
                     </div>
                     <div class="col-sm-2 col-5 text-center">
                         <div class="card">
                             <img class="img-fluid" src="images/git.png">
-                            <h3 class="iconos  py-4">Git</h3>
+                            <h3 class="iconos py-4">Git</h3>
                         </div>
                     </div>
                     <div class="col-sm-2 col-5 text-center">
@@ -125,7 +125,7 @@ include_once("menu.php"); ?>
                     </div>
                     <div class="col-sm-2 col-5 text-center">
                         <div class="card">
-                            <img class="img-fluid " src="images/xampp.png">
+                            <img class="img-fluid" src="images/xampp.png">
                             <h3 class="iconos py-4">XAMPP</h3>
                         </div>
                     </div>
@@ -137,8 +137,8 @@ include_once("menu.php"); ?>
                     </div>
                     <div class="col-sm-2 col-5 text-center">
                         <div class="card">
-                            <img class="img-fluid" src="images/Excel.png">
-                            <h3 class="iconos  py-4">Excel</h3>
+                            <img class="img-fluid" src="images/excel.png">
+                            <h3 class="iconos py-4">Excel</h3>
                         </div>
                     </div>
                 </div>
@@ -151,9 +151,9 @@ include_once("menu.php"); ?>
                     <div class="card shadow-lg">
                         <div class="row">
                             <div class="col-sm-3 col-4">
-                                <i class="fas fa-comment-alt p-5"></i>
+                                <i class="fas fa-comment-alt"></i>
                             </div>
-                            <div class="col-sm-4 offset-sm-1 col-5 mt-4">
+                            <div class="col-sm-4 offset-sm-1 col-7 mt-2">
                                 <h4 class="titulosnegrita">IDIOMAS</h4>
                                 <p class="pih">INGLES - Intermedio <br> ESPAÑOL - Nativo</p>
                             </div>
@@ -164,9 +164,9 @@ include_once("menu.php"); ?>
                     <div class="card shadow-lg">
                         <div class="row">
                             <div class="col-sm-3 col-4">
-                                <i class="fas fa-star p-5"></i>
+                                <i class="fas fa-star"></i>
                             </div>
-                            <div class="col-sm-4 offset-sm-1 col-5 mt-4">
+                            <div class="col-sm-4 offset-sm-1 col-7 mt-2">
                                 <h4 class="titulosnegrita">HOBBIES</h4>
                                 <p class="pih">Escuchar música <br> Hacer actividades scout</p>
                             </div>
@@ -201,7 +201,7 @@ include_once("menu.php"); ?>
                                     <li class="pih">Planeación de la producción a corto y mediano plazo, priorizando los clientes de alta importancia de Ia empresa.</li>
                                 </ul>
                                 <div class="row text-right mt-sm-2">
-                                    <div class="col-sm-12 col-10 mb-3">
+                                    <div class="col-sm-12 col-11 mb-3">
                                         <a href="https://www.industriasdelgado.com.ar/" target="_blank" class="btn-exp rounded-pill">VER EMPRESA</a>
                                     </div>
                                 </div>
@@ -225,7 +225,7 @@ include_once("menu.php"); ?>
 
                                 </ul>
                                 <div class="row text-right mt-sm-2">
-                                    <div class="col-sm-12 col-10 mb-3">
+                                    <div class="col-sm-12 col-11 mb-3">
                                         <a href="https://www.pavir.com.ar" target="_blank" class="btn-exp rounded-pill">VER EMPRESA</a>
                                     </div>
                                 </div>
@@ -263,7 +263,7 @@ include_once("menu.php"); ?>
                                     <li class="pih">Cursando materias de 3er y 4to año.</li>
                                 </ul>
                                 <div class="row text-right">
-                                    <div class="col-sm-12 col-10 mt-sm-4">
+                                    <div class="col-sm-12 col-11 mt-sm-4">
                                         <a href="http://www.unlu.edu.ar/index.php" target="_blank" class="btn-est rounded-pill">Ver Universidad</a>
                                     </div>
                                 </div>
@@ -285,7 +285,7 @@ include_once("menu.php"); ?>
                                         <li class="pih">Desarrollo de soluciones web para proyectos múltiples mayormente mediante el uso de PHP junto con Laravel para el Backend, y Bootstrap, JavaScript y jQuery para el Frontend.</li>
                                     </ul>                                                                                         
                                 <div class="row text-right mt-sm-1">
-                                    <div class="col-sm-12 col-10 mt-sm-4">
+                                    <div class="col-sm-12 col-11 mt-sm-4">
                                         <a href="https://depcsuite.com/" target="_blank" class="btn-est rounded-pill">Ver DePC</a>
                                     </div>
                                 </div>
