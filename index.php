@@ -12,7 +12,7 @@ include_once("menu.php");?>
                         </div>
                     </div>
                 </div>
-                <div class="row">
+                <div class="row mt-sm-2">
                     <div class="col-sm-12 col-12 d-flex justify-content-center">
                         <div>
                             <a href="proyectos.php" class="trabajo rounded-pill">MIRÁ MI TRABAJO</i></a>
@@ -24,4 +24,5 @@ include_once("menu.php");?>
     </main>
     <?php 
 include_once("footer.php");?>
+
 
