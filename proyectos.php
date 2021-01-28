@@ -49,7 +49,7 @@ include_once("menu.php"); ?>
                                 <a href="Proyectos/SGV/index.php" target="_blank" class="btn-p1 rounded-pill">VER PROYECTO</a>
                             </div>
                             <div class="col-sm-6 col-6 text-right">
-                                <a href="#" class="btn-p2 px-sm-3">CÓDIGO FUENTE</a>
+                                <a href="https://github.com/arnoldamorin/Sistema-de-ventas.git" target="_blank" class="btn-p2 px-sm-3">CÓDIGO FUENTE</a>
                             </div>
                         </div>
                     </div>
