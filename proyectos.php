@@ -44,8 +44,8 @@ include_once("menu.php"); ?>
                             <p class="card-text p-3">Sistema de gestión de clientes, productos y ventas, Realizado en
                                 HTML, CSS, PHP, MVC, Bootstrap, Js, Ajax, jQuery y MySQL de base de datos. <br> <br></p>
                         </div>
-                        <div class="row p-3">
-                            <div class="col-sm-6 col-6">
+                        <div class="row p-3 mt-4">
+                            <div class="col-sm-6 col-6 ">
                                 <a href="Proyectos/SGV/index.php" target="_blank" class="btn-p1 rounded-pill">VER PROYECTO</a>
                             </div>
                             <div class="col-sm-6 col-6 text-right">
@@ -63,7 +63,7 @@ include_once("menu.php"); ?>
                         <div class="col-12">
                             <p class="card-text p-3">Proyecto Full Stack desarrollado en PHP, Laravel, Javascript, jQuery, AJAX, HTML, CSS, con panel administrador, gestor de usuarios, módulo de permisos y funcionalidades a fines.</p>
                         </div>
-                        <div class="row p-3">
+                        <div class="row p-3 mt-4">
                             <div class="col-sm-6 col-6">
                                 <a href="wwww.emilcecharras.com.ar/admin" target="_blank" class="btn-p1 rounded-pill">VER ONLINE</a>
                             </div>

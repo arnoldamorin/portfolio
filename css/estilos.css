@@ -1,8 +1,8 @@
 body{
     font-family: 'Montserrat', sans-serif;
     margin:auto;
-    min-width:600px;
-    max-width:2000px;
+   /* min-width:600px;
+    max-width:2000px;*/
 }
    
 h1{
@@ -11,11 +11,11 @@ h1{
     font-weight: bold;
 }
 
+
 @media(max-width:576px){
     h1{
         font-size: 25px;
-        font-weight: bold;     
-        
+        font-weight: bold;           
     }
 }
 p{
@@ -27,6 +27,7 @@ p{
    p{
        font-size: 15px;       
        margin: 8px;
+       
    }
 }
 @media(max-width:576px){
@@ -219,9 +220,7 @@ footer .fa-whatsapp{
         bottom: 0;
     }
 }
-footer .depc{
 
-}
 /*--------------------------------Proyectos--------------------------------*/
 
 #proyectos,#sobre-mi{
@@ -462,9 +461,10 @@ footer .depc{
 }
 @media(max-width:576px){
     #sobre-mi section .logo{
-        margin: 20px 250px;
+        margin: auto;
         display: flex;        
         align-content: center;
+        max-width: 150px;
     }   
 }
 #sobre-mi section .titulosgrises{
@@ -522,7 +522,8 @@ footer .depc{
 @media(max-width:576px){
     #sobre-mi .btn-exp{  
         font-size: 15px;  
-        padding: 10px 25px;     
+        padding: 10px 25px;
+            
     }
 }
 #sobre-mi .btn-est{
@@ -545,6 +546,12 @@ footer .depc{
         background-color:  #EDEDED; 
     }
 }
+@media(max-width:576px){
+    #sobre-mi .imagenes{
+        max-width: 25;
+    }
+ }
+
 /*--------------------------------Index--------------------------------*/
 @media(max-width:576px){
     #index main{
