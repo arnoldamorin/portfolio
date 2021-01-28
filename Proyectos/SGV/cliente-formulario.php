@@ -111,8 +111,8 @@ if (isset($_GET["id"]) && $_GET["id"] > 0) {
         <?php if (isset($mensajeSuccess)) { ?>
             <div class="alert alert-success col-6" role="alert"><?= $mensajeSuccess ?></div>
 
-        <?php }  ?>
-        <?php if (isset($mensajeError)) { ?>
+        <?php }  
+             if (isset($mensajeError)) { ?>
             <div class="alert alert-danger col-6" role="alert"><?= $mensajeError ?></div>
 
         <?php }  ?>

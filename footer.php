@@ -1,6 +1,6 @@
 
 
-    <footer>
+    <footer class="mt-4 mt-sm-0">
         <div class="container my-sm-15">
             <div class="row text-center">
                 <div class="col-sm-3 col-12">
@@ -15,7 +15,7 @@
                 <div class="col-sm-3 col-12">
                     <a class="mail" href="mailto:info@depcsuite.com">info@arnoldamorin.com.ar</a>
                 </div>
-                <div class="col-3 text-right" id="wp">
+                <div class="col-3 d-flex justify-content-right" id="wp">
                     <a href="https://api.whatsapp.com/send?phone=54232315214690" title="whatsapp"><i
                             class="fab fa-whatsapp"></i></a>
                 </div>

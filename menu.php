@@ -1,3 +1,4 @@
+
 <!DOCTYPE html>
 <html lang="es">
 
@@ -5,13 +6,14 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title><?php echo $pg ?></title>
-    <link rel="shortcut icon" href="images/Aa.png" type="image/x-icon">
+    <link rel="shortcut icon" href="images/AA.png" type="image/x-icon">
     <link rel="stylesheet" href="css/fontawesome/css/all.min.css">
     <link rel="stylesheet" href="css/fontawesome/css/fontawesome.min.css">
     <link rel="stylesheet" href="css/bootstrap/css/bootstrap.min.css">
     <link rel="stylesheet" href="css/estilos.css">
     <link rel="preconnect" href="https://fonts.gstatic.com">
-    <link href="https://fonts.googleapis.com/css2?family=Montserrat:ital,wght@100,200,300,400,500,600,700,800,900&display=swap" rel="stylesheet">    
+    <link href="https://fonts.googleapis.com/css2?family=Montserrat:ital,wght@100,200,300,400,500,600,700,800,900&display=swap" rel="stylesheet">   
+    <script src="https://www.google.com/recaptcha/api.js" async defer></script> 
     <script src="js/jquery-3.5.1.min.js"></script>
     <script src="css/bootstrap/js/bootstrap.min.js"></script>    
     <script src="css/bootstrap/js/bootstrap.bundle.min.js"></script>
