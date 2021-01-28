@@ -1,4 +1,5 @@
 <?php
+
 /**
  * PHPMailer RFC821 SMTP email transport class.
  * PHP Version 5.5.
@@ -18,7 +19,7 @@
  * FITNESS FOR A PARTICULAR PURPOSE.
  */
 
-//namespace PHPMailer\PHPMailer;
+namespace PHPMailer\PHPMailer;
 
 /**
  * PHPMailer RFC821 SMTP email transport class.
@@ -34,7 +35,7 @@ class SMTP
      *
      * @var string
      */
-    const VERSION = '6.1.7';
+    const VERSION = '6.2.0';
 
     /**
      * SMTP line break constant.
@@ -342,8 +343,20 @@ class SMTP
         // Get any announcement
         $this->last_reply = $this->get_lines();
         $this->edebug('SERVER -> CLIENT: ' . $this->last_reply, self::DEBUG_SERVER);
-
-        return true;
+        $responseCode = (int)substr($this->last_reply, 0, 3);
+        if ($responseCode === 220) {
+            return true;
+        }
+        //Anything other than a 220 response means something went wrong
+        //RFC 5321 says the server will wait for us to send a QUIT in response to a 554 error
+        //https://tools.ietf.org/html/rfc5321#section-3.1
+        if ($responseCode === 554) {
+            $this->quit();
+        }
+        //This will handle 421 responses which may not wait for a QUIT (e.g. if the server is being shut down)
+        $this->edebug('Connection: closing due to error', self::DEBUG_CONNECTION);
+        $this->close();
+        return false;
     }
 
     /**
@@ -539,11 +552,12 @@ class SMTP
                     return false;
                 }
                 // Send encoded username and password
-                if (!$this->sendCommand(
-                    'User & Password',
-                    base64_encode("\0" . $username . "\0" . $password),
-                    235
-                )
+                if (
+                    !$this->sendCommand(
+                        'User & Password',
+                        base64_encode("\0" . $username . "\0" . $password),
+                        235
+                    )
                 ) {
                     return false;
                 }
@@ -784,7 +798,16 @@ class SMTP
     public function hello($host = '')
     {
         //Try extended hello first (RFC 2821)
-        return $this->sendHello('EHLO', $host) or $this->sendHello('HELO', $host);
+        if ($this->sendHello('EHLO', $host)) {
+            return true;
+        }
+
+        //Some servers shut down the SMTP service here (RFC 5321)
+        if (substr($this->helo_rply, 0, 3) == '421') {
+            return false;
+        }
+
+        return $this->sendHello('HELO', $host);
     }
 
     /**
@@ -1086,8 +1109,10 @@ class SMTP
     {
         //If SMTP transcripts are left enabled, or debug output is posted online
         //it can leak credentials, so hide credentials in all but lowest level
-        if (self::DEBUG_LOWLEVEL > $this->do_debug &&
-            in_array($command, ['User & Password', 'Username', 'Password'], true)) {
+        if (
+            self::DEBUG_LOWLEVEL > $this->do_debug &&
+            in_array($command, ['User & Password', 'Username', 'Password'], true)
+        ) {
             $this->edebug('CLIENT -> SERVER: [credentials hidden]', self::DEBUG_CLIENT);
         } else {
             $this->edebug('CLIENT -> SERVER: ' . $data, self::DEBUG_CLIENT);
@@ -1207,7 +1232,8 @@ class SMTP
                     self::DEBUG_LOWLEVEL
                 );
 
-                //stream_select returns false when the `select` system call is interrupted by an incoming signal, try the select again
+                //stream_select returns false when the `select` system call is interrupted
+                //by an incoming signal, try the select again
                 if (stripos($message, 'interrupted system call') !== false) {
                     $this->edebug(
                         'SMTP -> get_lines(): retrying stream_select',

@@ -44,7 +44,7 @@ include_once("menu.php"); ?>
                             <p class="card-text p-3">Sistema de gestión de clientes, productos y ventas, Realizado en
                                 HTML, CSS, PHP, MVC, Bootstrap, Js, Ajax, jQuery y MySQL de base de datos. <br> <br></p>
                         </div>
-                        <div class="row p-3 mt-sm-2">
+                        <div class="row p-2 mt-sm-2">
                             <div class="col-sm-6 col-6 ">
                                 <a href="Proyectos/SGV/index.php" target="_blank" class="btn-p1 rounded-pill">VER PROYECTO</a>
                             </div>

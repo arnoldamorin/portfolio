@@ -43,7 +43,7 @@ p{
 .navbar-toggler-icon{
     color: #E20000;
     border:1px solid #E20000;
-    text-align: center;
+    text-align: left;
     display: flex;
     align-self: center;
     font-size: 35px;
@@ -59,7 +59,8 @@ nav .nav-link{
 @media(max-width:576px){
     nav .nav-link{
         color: #E20000;  
-        padding: 0;    
+        padding: 0;
+                    
     }
 }
 nav .active{
@@ -68,7 +69,7 @@ nav .active{
 
 @media(max-width:576px){
     nav .active{   
-        border:0;
+        border:0;       
     }
  }
 .nav-item{   
@@ -78,7 +79,8 @@ nav .active{
     .nav-item{   
         font-size: 20px;
         padding: 0px;
-        text-align: left;      
+        text-align: left; 
+             
     }
  }
 footer .pcsuite{
@@ -137,6 +139,11 @@ form .form-control{
 @media(max-width:576px){
     #contacto main,#proyectos main{
         height: auto;
+    }
+}
+@media(max-width:576px){
+    #confirmacion main{
+        height: 100vh;
     }
 }
 @media(max-width:576px){
@@ -328,7 +335,7 @@ footer .fa-whatsapp{
 #proyectos .card{
     border-radius: 20px;
     border-color: white;
-    
+    height: 460px;
 }
 
 #proyectos .color-gradiente{  
@@ -598,9 +605,9 @@ footer .fa-whatsapp{
 @media(max-width:576px){
     #index{       
         background-image:url(../images/index375.png);
-        background-size: 127%;  
-        background-position-x: -50px;
-        background-position-y: -110px;
+        background-size: 160%;  
+        background-position-x: -130px;
+        background-position-y: -140px;
     }
 }
 @media(min-width:768px){
@@ -634,12 +641,13 @@ footer .fa-whatsapp{
 @media(max-width:576px){
     #index .arnold{    
         color:white;
-        font-size: 25px;
+        font-size: 20px;
         font-weight: 300; 
         border:1px solid white;
         width: fit-content;           
         text-align: center;        
         margin: 20px 0;
+        padding: 5px 0;
         text-shadow: 0 0 5px #000000; 
     }
 }
@@ -673,18 +681,28 @@ footer .fa-whatsapp{
     border-color: transparent; 
 }
 #index #medio .container{
-    height: 65vh;
+    height: 60vh;
     display: flex;
     flex-direction: column;
     justify-items: center;    
     justify-content: flex-end;
 }
 @media(max-width:576px){
-    #index #medio .container{        
+    #index #medio .container{     
+        height: 70vh;   
         display: flex;
         flex-direction: column;
         justify-items: center;    
         justify-content: flex-end;
+    }
+}
+@media(max-width:576px){
+    #contacto #medio .container{     
+        height: 60vh;   
+        display: flex;
+        flex-direction: column;
+        justify-items: center;    
+        justify-content: flex-start;
     }
 }
 
