@@ -1,28 +1,21 @@
 <?php $pg = "index";
-include_once("menu.php");?>
-    <main>
-        <section id="medio">
-            <div class="container">
-                <div class="row">
-                    <div class="col-sm-12 col-12 d-flex justify-content-center">
-                        <div class="card">
-                            <p class="arnold rounded-pill">Hola mi nombre es <span
-                                    style="text-underline-position: below; font-weight: bold;">Arnold,</span>
-                                soy desarrollador full stack.<i class="fas fa-search"></i></p>
-                        </div>
-                    </div>
-                </div>
-                <div class="row mt-sm-2">
-                    <div class="col-sm-12 col-12 d-flex justify-content-center">
-                        <div>
-                            <a href="proyectos.php" class="trabajo rounded-pill">MIRÁ MI TRABAJO</i></a>
-                        </div>
-                    </div>
+include_once("menu.php"); ?>
+<main>
+    <section id="medio">
+        <div class="container">
+            <div class="row p-0 m-0">
+                <div class="col-sm-12 col-12 d-flex justify-content-center p-0 m-0">
+                    <p class="arnold rounded-pill m-0">Hola mi nombre es <span style="text-underline-position: below; font-weight: bold;">Arnold,</span>
+                        soy desarrollador full stack.<i class="fas fa-search"></i></p>
                 </div>
             </div>
+            <div class="row mt-sm-4">
+                <div class="col-sm-12 col-12 d-flex justify-content-center">
+                    <a href="proyectos.php" class="trabajo rounded-pill">MIRÁ MI TRABAJO</i></a>
+                </div>
             </div>
-    </main>
-    <?php 
-include_once("footer.php");?>
-
-
+        </div>
+        </div>
+</main>
+<?php
+include_once("footer.php"); ?>

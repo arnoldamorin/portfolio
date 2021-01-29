@@ -16,7 +16,7 @@ include_once("menu.php"); ?>
                             <div class="col-sm-1 col-1 mr-sm-3">
                                 <a href="https://www.linkedin.com/in/arnold-amorin-0382bb123/" target="_blank" title="Linkedin"><i class="fab fa-linkedin-in"></i></a>
                             </div>
-                            <div class="col-sm-6 col-7 ml-3">
+                            <div class="col-sm-6 col-8 ml-3">
                                 <form class="form-inline d-flex justify-content-between">
                                     <a href="CV_ARNOLD_AMORIN.pdf" download="CV_ARNOLD_AMORIN.pdf" class="btn-pdf">DESCARGÁ MI CV <i class="fas fa-download"></i></a>
                                 </form>
@@ -39,103 +39,103 @@ include_once("menu.php"); ?>
                     </div>
                 </div>
                 <div class="row d-flex justify-content-center">
-                    <div class="col-sm-2 col-5 text-center">
+                    <div class="col-sm-2 col-4 sc text-center">
                         <div class="card">
                             <img class="img-fluid" src="images/js.png">
                             <h3 class="iconos py-4">Javascript</h3>
                         </div>
                     </div>
-                    <div class="col-sm-2 col-5 text-center">
+                    <div class="col-sm-2 col-4 sc text-center">
                         <div class="card">
                             <img class="img-fluid" src="images/php.png">
                             <h3 class="iconos py-4">PHP</h3>
                         </div>
                     </div>
-                    <div class="col-sm-2 col-5 text-center">
+                    <div class="col-sm-2 col-4 sc text-center">
                         <div class="card">
                             <img class="img-fluid " src="images/html.png">
                             <h3 class="iconos py-4">HTML5</h3>
                         </div>
                     </div>
-                    <div class="col-sm-2 col-5 text-center">
+                    <div class="col-sm-2 col-4 sc text-center">
                         <div class="card">
                             <img class="img-fluid" src="images/react.png">
                             <h3 class="iconos py-4">React.js</h3>
                         </div>
                     </div>
-                    <div class="col-sm-2 col-5 text-center">
+                    <div class="col-sm-2 col-4 sc text-center">
                         <div class="card">
                             <img class="img-fluid" src="images/jquery.png">
                             <h3 class="iconos  py-4">jQuery</h3>
                         </div>
                     </div>
-                    <div class="col-sm-2 col-5 text-center">
+                    <div class="col-sm-2 col-4 sc  text-center">
                         <div class="card">
                             <img class="img-fluid" src="images/bootstrap.png">
                             <h3 class="iconos  py-4">Bootstrap</h3>
                         </div>
                     </div>
-                    <div class="col-sm-2 col-5 text-center">
+                    <div class="col-sm-2 col-4 sc text-center">
                         <div class="card">
                             <img class="img-fluid" src="images/laravel.png">
                             <h3 class="iconos py-4">Laravel</h3>
                         </div>
                     </div>
-                    <div class="col-sm-2 col-5 text-center">
+                    <div class="col-sm-2 col-4 sc text-center">
                         <div class="card">
                             <img class="img-fluid" src="images/mariadb.png">
                             <h3 class="iconos py-4">MariaDB</h3>
                         </div>
                     </div>
-                    <div class="col-sm-2 col-5 text-center">
+                    <div class="col-sm-2 col-4 sc text-center">
                         <div class="card">
                             <img class="img-fluid " src="images/css.png">
                             <h3 class="iconos py-4">CSS</h3>
                         </div>
                     </div>
-                    <div class="col-sm-2 col-5 text-center">
+                    <div class="col-sm-2 col-4 sc text-center">
                         <div class="card">
                             <img class="img-fluid" src="images/mysql.png">
                             <h3 class="iconos py-4">MySQL</h3>
                         </div>
                     </div>
-                    <div class="col-sm-2 col-5 text-center">
+                    <div class="col-sm-2 col-4 sc text-center">
                         <div class="card">
                             <img class="img-fluid" src="images/apache.png">
                             <h3 class="iconos py-4">Apache</h3>
                         </div>
                     </div>
-                    <div class="col-sm-2 col-5 text-center">
+                    <div class="col-sm-2 col-4 sc text-center">
                         <div class="card">
                             <img class="img-fluid" src="images/git.png">
                             <h3 class="iconos py-4">Git</h3>
                         </div>
                     </div>
-                    <div class="col-sm-2 col-5 text-center">
+                    <div class="col-sm-2 col-4 sc text-center">
                         <div class="card">
                             <img class="img-fluid" src="images/heidi.png">
                             <h3 class="iconos py-4">Heidi</h3>
                         </div>
                     </div>
-                    <div class="col-sm-2 col-5 text-center">
+                    <div class="col-sm-2 col-4 sc text-center">
                         <div class="card">
                             <img class="img-fluid" src="images/sublime.png">
                             <h3 class="iconos py-4">Sublime Text</h3>
                         </div>
                     </div>
-                    <div class="col-sm-2 col-5 text-center">
+                    <div class="col-sm-2 col-4 sc text-center">
                         <div class="card">
                             <img class="img-fluid" src="images/xampp.png">
                             <h3 class="iconos py-4">XAMPP</h3>
                         </div>
                     </div>
-                    <div class="col-sm-2 col-5 text-center">
+                    <div class="col-sm-2 col-4 sc text-left">
                         <div class="card">
                             <img class="img-fluid" src="images/word.png">
                             <h3 class="iconos py-4">Word</h3>
                         </div>
                     </div>
-                    <div class="col-sm-2 col-5 text-center">
+                    <div class="col-sm-2 col-4 sc text-left">
                         <div class="card">
                             <img class="img-fluid" src="images/excel.png">
                             <h3 class="iconos py-4">Excel</h3>

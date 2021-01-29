@@ -1,7 +1,7 @@
 
 
     <footer class="mt-4 mt-sm-0">
-        <div class="container my-sm-15">
+        <div class="container my-sm-15 align-items-end flex-column">
             <div class="row text-center">
                 <div class="col-sm-3 col-12">
                     <a href="https://github.com/arnoldamorin" target="_blank" title="Github"><i
