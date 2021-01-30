@@ -22,8 +22,8 @@
 
 <body id=<?php echo $pg ?>>
     <header>
-        <div class="container mb-sm-5 px-sm-3 py-sm-3 ">
-            <nav class="navbar navbar-expand-md px-sm-0">
+        <div class="container mb-sm-5 px-sm-3 py-sm-3">
+            <nav class="navbar navbar-expand-md px-sm-0 ">
                 <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarsExampleDefault"
                     aria-controls="navbarsExampleDefault" aria-expanded="false" aria-label="Toggle navigation">
                     <span class="navbar-toggler-icon"><i class="fas fa-bars text-center"></i></span>
