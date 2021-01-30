@@ -25,7 +25,7 @@ include_once("menu.php"); ?>
                                 <div class="col-sm-6 col-6 btn-col-p">
                                     <a href="Proyectos/AbmClientes/abmclientes.php" target="_blank" class="btn-p1 rounded-pill">VER ONLINE</a>
                                 </div>
-                                <div class="col-sm-6 col-6 btn-col-p">
+                                <div class="col-sm-6 col-6 btn-col-d">
                                     <a href="https://github.com/arnoldamorin/abmclientes.git" class="btn-p2">CÓDIGO FUENTE</a>
                                 </div>
                             </div>
@@ -45,7 +45,7 @@ include_once("menu.php"); ?>
                                 <div class="col-sm-6 col-6 btn-col-p">
                                     <a href="Proyectos/SGV/index.php" target="_blank" class="btn-p1 rounded-pill">VER PROYECTO</a>
                                 </div>
-                                <div class="col-sm-6 col-6 btn-col-p">
+                                <div class="col-sm-6 col-6 btn-col-d">
                                     <a href="https://github.com/arnoldamorin/Sistema-de-ventas.git" target="_blank" class="btn-p2">CÓDIGO FUENTE</a>
                                 </div>
                             </div>
@@ -64,7 +64,7 @@ include_once("menu.php"); ?>
                                 <div class="col-sm-6 col-6 btn-col-p">
                                     <a href="wwww.emilcecharras.com.ar/admin" target="_blank" class="btn-p1 rounded-pill">VER ONLINE</a>
                                 </div>
-                                <div class="col-sm-6 col-6  btn-col-p">
+                                <div class="col-sm-6 col-6  btn-col-d">
                                     <a href="#" class="btn-p2">CÓDIGO FUENTE</a>
                                 </div>
                             </div>
