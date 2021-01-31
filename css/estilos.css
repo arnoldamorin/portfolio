@@ -98,9 +98,7 @@ nav .active{
              
     }
  }
-footer .pcsuite{
-    text-underline-position: below;
-}
+
 .btn{
     background-color: white;
     color: #370A6D;
@@ -155,13 +153,16 @@ form .form-control{
     }
 }
 /*--------------------------------Main--------------------------------*/
-#index main,#contacto main,#proyectos main{
+#proyectos main{
+    height:fit-content;
+}
+#index main,#contacto main{
     height:79vh;
 }
 
-@media(min-width:768px) and (max-width:1400px){
+@media(min-width:1600px){
     #proyectos main{
-        height:120vh;
+        height:79vh;
     }
 }
 @media(max-width:576px){
@@ -189,6 +190,10 @@ form .form-control{
 }
 
 /*--------------------------------Footer--------------------------------*/
+
+footer .pcsuite{
+    text-underline-position: below;
+}
 #contacto footer, #contacto footer .a,#index footer,#index footer .a{
     color: white;
     font-size: 14px;  
