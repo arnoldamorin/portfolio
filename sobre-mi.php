@@ -153,7 +153,7 @@ include_once("menu.php"); ?>
                             <div class="col-sm-3 col-4">
                                 <i class="fas fa-comment-alt"></i>
                             </div>
-                            <div class="col-sm-4 offset-sm-1 col-7 mt-2">
+                            <div class="col-sm-4 offset-1 col-7 mt-2">
                                 <h4 class="titulosnegrita">IDIOMAS</h4>
                                 <p class="pih">INGLES - Intermedio <br> ESPAÑOL - Nativo</p>
                             </div>
@@ -166,7 +166,7 @@ include_once("menu.php"); ?>
                             <div class="col-sm-3 col-4">
                                 <i class="fas fa-star"></i>
                             </div>
-                            <div class="col-sm-4 offset-sm-1 col-7 mt-2">
+                            <div class="col-sm-4 offset-1 col-7 mt-2">
                                 <h4 class="titulosnegrita">HOBBIES</h4>
                                 <p class="pih">Escuchar música <br> Hacer actividades scout</p>
                             </div>
@@ -176,7 +176,7 @@ include_once("menu.php"); ?>
             </div>
         </div>
     </section>
-    <section id="Experiencia">
+    <section id="Experiencia" class="fexp">
         <div class="container">
             <div class="row py-4">
                 <div class="col-sm-2 col-12 text-center">
@@ -187,47 +187,42 @@ include_once("menu.php"); ?>
                 </div>
             </div>
             <div class="row py-sm-4">
-                <div class="col-sm-6 col-12 mt-sm-2 ">
+                <div class="col-sm-6 col-12">
                     <div class="card shadow-lg">
-                        <div class="row">
-                            <div class="col-sm-3 col-12">
-                                <img class="logo img-fluid" src="images/Id sa.png">
-                            </div>
-                            <div class="col-sm-7 offset-sm-1 col-12 px-sm-0 my-sm-2 pt-sm-1">
-                                <h3 class="titulosgrises m-0">Planeación y control de la producción</h3>
-                                <h3 class="subtitulovioleta m-0">Industrias Delgado S.A.</h3>
-                                <h3 class="fecha mt-2">NOV 2017 - MAR 2018</h3>
-                                <ul class="m-sm-0 px-sm-3 m-4">
-                                    <li class="pih">Planeación de la producción a corto y mediano plazo, priorizando los clientes de alta importancia de Ia empresa.</li>
-                                </ul>
-                                <div class="row text-right mt-sm-2">
-                                    <div class="col-sm-12 col-11 mb-3">
-                                        <a href="https://www.industriasdelgado.com.ar/" target="_blank" class="btn-exp rounded-pill">VER EMPRESA</a>
-                                    </div>
+                        <div class="card-block position-relative">
+                            <div class="row">
+                                <div class="col-sm-3 col-12">
+                                    <img class="logo img-fluid" src="images/Id sa.png">
+                                </div>
+                                <div class="col-sm-7 offset-sm-1 col-12 my-2 pt-1 contenidoExperiencia">
+                                    <h3 class="titulosgrises m-0">Planeación y control de la producción</h3>
+                                    <h3 class="subtitulovioleta m-0">Industrias Delgado S.A.</h3>
+                                    <h3 class="fecha mt-2">NOV 2017 - MAR 2018</h3>
+                                    <ul class="m-sm-0 px-sm-3 m-2">
+                                        <li class="pih">Planeación de la producción a corto y mediano plazo, priorizando los clientes de alta importancia de Ia empresa.</li>
+                                    </ul>
+                                    <a href="https://www.industriasdelgado.com.ar/" target="_blank" class="btn-exp rounded-pill">VER EMPRESA</a>
                                 </div>
                             </div>
                         </div>
                     </div>
                 </div>
-                <div class="col-sm-6 col-12 mt-2">
+                <div class="col-sm-6 col-12">
                     <div class="card shadow-lg ">
-                        <div class="row">
-                            <div class="col-sm-3 col-12">
-                                <img class="logo img-fluid" src="images/Pavir.png">
-                            </div>
-                            <div class="col-sm-7 offset-sm-1 px-sm-0 my-sm-2 pt-1">
-                                <h3 class="titulosgrises m-0">Community manager y Soporte de sistemas</h3>
-                                <h3 class="subtitulovioleta m-0">Paissan Hnos. S.A.</h3>
-                                <h3 class="fecha mt-2">FEB 2016 - PRESENTE</h3>
-                                <ul class="m-sm-0 px-sm-3 m-4">
-                                    <li class="pih">Manejo de redes sociales de la marca Pavir.</li>
-                                    <li class="pih">Soporte técnico de sistemas, solucionando problemas básicos y frecuentes en la empresa.</li>
-
-                                </ul>
-                                <div class="row text-right mt-sm-2">
-                                    <div class="col-sm-12 col-11 mb-3">
-                                        <a href="https://www.pavir.com.ar" target="_blank" class="btn-exp rounded-pill">VER EMPRESA</a>
-                                    </div>
+                        <div class="card-block position-relative">
+                            <div class="row">
+                                <div class="col-sm-3 col-12">
+                                    <img class="logo img-fluid" src="images/Pavir.png">
+                                </div>
+                                <div class="col-sm-7 offset-sm-1 my-2 pt-1 contenidoExperiencia">
+                                    <h3 class="titulosgrises m-0">Community manager y Soporte de sistemas</h3>
+                                    <h3 class="subtitulovioleta m-0">Paissan Hnos. S.A.</h3>
+                                    <h3 class="fecha mt-2">FEB 2016 - PRESENTE</h3>
+                                    <ul class="m-sm-0 px-sm-3 m-2">
+                                        <li class="pih">Manejo de redes sociales de la marca Pavir.</li>
+                                        <li class="pih">Soporte técnico de sistemas, solucionando problemas básicos y frecuentes en la empresa.</li>
+                                    </ul>
+                                    <a href="https://www.pavir.com.ar" target="_blank" class="btn-exp rounded-pill ">VER EMPRESA</a>
                                 </div>
                             </div>
                         </div>
@@ -249,23 +244,21 @@ include_once("menu.php"); ?>
             <div class="row py-sm-4">
                 <div class="col-sm-6 col-12">
                     <div class="card shadow-lg">
-                        <div class="row">
-                            <div class="col-sm-3 col-12">
-                                <img class="logo img-fluid" src="images/unlu.png">
-                            </div>
-                            <div class="col-sm-7 offset-sm-1 my-2 pt-1">
-                                <h3 class="titulosgrises m-0">Licenciatura en Sistemas de Información</h3>
-                                <h3 class="subtituloRojo m-0">Universidad Nacional de Luján</h3>
-                                <h3 class="fecha mt-2">MAR 2014 - PRESENTE</h3>
-                                <ul class="m-sm-0 px-sm-3 m-4">
-                                    <li class="pih">Carrera en curso.</li>
-                                    <li class="pih">Primer y segundo año Aprobados.</li>
-                                    <li class="pih">Cursando materias de 3er y 4to año.</li>
-                                </ul>
-                                <div class="row text-right">
-                                    <div class="col-sm-12 col-11 mt-sm-4">
-                                        <a href="http://www.unlu.edu.ar/index.php" target="_blank" class="btn-est rounded-pill">Ver Universidad</a>
-                                    </div>
+                        <div class="card-block position-relative">
+                            <div class="row">
+                                <div class="col-sm-3 col-12">
+                                    <img class="logo img-fluid" src="images/unlu.png">
+                                </div>
+                                <div class="col-sm-7 offset-sm-1 my-2 pt-1 contenidoEstudios">
+                                    <h3 class="titulosgrises m-0">Licenciatura en Sistemas de Información</h3>
+                                    <h3 class="subtituloRojo m-0">Universidad Nacional de Luján</h3>
+                                    <h3 class="fecha mt-2">MAR 2014 - PRESENTE</h3>
+                                    <ul class="m-sm-0 px-sm-3 m-2">
+                                        <li class="pih">Carrera en curso.</li>
+                                        <li class="pih">Primer y segundo año Aprobados.</li>
+                                        <li class="pih">Cursando materias de 3er y 4to año.</li>
+                                    </ul>
+                                    <a href="http://www.unlu.edu.ar/index.php" target="_blank" class="btn-est rounded-pill">Ver Universidad</a>
                                 </div>
                             </div>
                         </div>
@@ -273,21 +266,19 @@ include_once("menu.php"); ?>
                 </div>
                 <div class="col-sm-6 col-12">
                     <div class="card shadow-lg">
-                        <div class="row">
-                            <div class="col-sm-3 col-12">
-                                <img class="logo img-fluid" src="images/depc.png">
-                            </div>
-                            <div class="col-sm-7 col-12 offset-sm-1 px-sm-0 my-2 pt-1">                                 
-                                <h3 class="titulosgrises m-0">Desarrollador web Full Stack</h3>
+                        <div class="card-block position-relative">
+                            <div class="row">
+                                <div class="col-sm-3 col-12">
+                                    <img class="logo img-fluid" src="images/depc.png">
+                                </div>
+                                <div class="col-sm-7 col-12 offset-sm-1 my-2 pt-1 contenidoEstudios">
+                                    <h3 class="titulosgrises m-0">Desarrollador web Full Stack</h3>
                                     <h3 class="subtituloRojo m-0">DePC Suite</h3>
                                     <h3 class="fecha mt-2">AGO 2020 - DIC 2020</h3>
-                                    <ul class="m-sm-0 px-sm-3 m-4">
+                                    <ul class="m-sm-0 px-sm-3 m-2">
                                         <li class="pih">Desarrollo de soluciones web para proyectos múltiples mayormente mediante el uso de PHP junto con Laravel para el Backend, y Bootstrap, JavaScript y jQuery para el Frontend.</li>
-                                    </ul>                                                                                         
-                                <div class="row text-right mt-sm-1">
-                                    <div class="col-sm-12 col-11 mt-sm-4">
-                                        <a href="https://depcsuite.com/" target="_blank" class="btn-est rounded-pill">Ver DePC</a>
-                                    </div>
+                                    </ul>
+                                    <a href="https://depcsuite.com/" target="_blank" class="btn-est rounded-pill">Ver DePC</a>
                                 </div>
                             </div>
                         </div>

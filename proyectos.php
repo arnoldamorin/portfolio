@@ -21,7 +21,7 @@ include_once("menu.php"); ?>
                         <p class="card-text">Alta, Baja, modificiacion de un registro de clientes
                             Realizado en HTML, CSS, PHP, Bootstrap y Json.</p>
                         <div class="card-block">
-                            <div class="row p-0 m-0 btn-proyectos w-100">
+                            <div class="row p-0  btn-proyectos w-100">
                                 <div class="col-sm-6 col-6 btn-col-p">
                                     <a href="Proyectos/AbmClientes/abmclientes.php" target="_blank" class="btn-p1 rounded-pill">VER ONLINE</a>
                                 </div>
@@ -41,7 +41,7 @@ include_once("menu.php"); ?>
                         <p class="card-text">Sistema de gestión de clientes, productos y ventas, Realizado en
                             HTML, CSS, PHP, MVC, Bootstrap, Js, Ajax, jQuery y MySQL de base de datos.</p>
                         <div class="card-block">
-                            <div class="row p-0 m-0 btn-proyectos w-100">
+                            <div class="row p-0 btn-proyectos w-100">
                                 <div class="col-sm-6 col-6 btn-col-p">
                                     <a href="Proyectos/SGV/index.php" target="_blank" class="btn-p1 rounded-pill">VER PROYECTO</a>
                                 </div>
@@ -60,11 +60,11 @@ include_once("menu.php"); ?>
                         <h2 class="card-title color-gradiente">PROYECTO INTEGRADOR</h2>
                         <p class="card-text">Proyecto Full Stack desarrollado en PHP, Laravel, Javascript, jQuery, AJAX, HTML, CSS, con panel administrador, gestor de usuarios, módulo de permisos y funcionalidades a fines.</p>
                         <div class="card-block">
-                            <div class="row p-0 m-0 btn-proyectos w-100">
+                            <div class="row p-0  btn-proyectos w-100">
                                 <div class="col-sm-6 col-6 btn-col-p">
                                     <a href="wwww.emilcecharras.com.ar/admin" target="_blank" class="btn-p1 rounded-pill">VER ONLINE</a>
                                 </div>
-                                <div class="col-sm-6 col-6  btn-col-d">
+                                <div class="col-sm-6 col-6 btn-col-d">
                                     <a href="#" class="btn-p2">CÓDIGO FUENTE</a>
                                 </div>
                             </div>

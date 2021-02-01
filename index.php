@@ -9,7 +9,7 @@ include_once("menu.php"); ?>
                         soy desarrollador full stack.<i class="fas fa-search"></i></p>
                 </div>
             </div>
-            <div class="row mt-sm-4">
+            <div class="row mt-sm-4 mt-2">
                 <div class="col-sm-12 col-12 d-flex justify-content-center">
                     <a href="proyectos.php" class="trabajo rounded-pill">MIRÁ MI TRABAJO</i></a>
                 </div>
