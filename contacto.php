@@ -1,8 +1,7 @@
 <?php
-$gg= "";
 $pg = "contacto";
-include_once("PHPMailer/src/PHPMailer.php");
-include_once("PHPMailer/src/SMTP.php");
+include_once('PHPMailer\PHPMailer\PHPMailer');
+include_once('PHPMailer\PHPMailer\SMTP');
 
 /*if ($_POST) {
   /*if (isset($_POST['g-recaptcha'])) {    
@@ -20,53 +19,54 @@ include_once("PHPMailer/src/SMTP.php");
   $responseKeys = json_decode($response, true);
   // should return JSON with success as true  
 */
-  if ($_POST){   
-    $nombre = $_POST["txtNombre"];
-    $correo = $_POST["txtCorreo"];
-    $mensaje = $_POST["txtMensaje"];
-  
-    if ($nombre != "" && $correo != "") {
-      $mail = new PHPMailer();
-      $mail->IsSMTP();
-      $mail->SMTPAuth = true;
-      $mail->Host = "mail.depcsuite.com"; // SMTP a utilizar
-      $mail->Username = "info@arnoldamorin.com.ar"; // Correo completo a utilizar
-      $mail->Password = $gg;
-      $mail->Port = 25;
-      $mail->From = "info@arnoldamorin.com.ar"; //Desde la cuenta donde enviamos
-      $mail->FromName = "Arnold Amorin";
-      $mail->IsHTML(true);
-      $mail->SMTPOptions = array(
-        'ssl' => array(
-          'verify_peer' => false,
-          'verify_peer_name' => false,
-          'allow_self_signed' => true
-        )
-      );  
-      //Destinatarios
-      $mail->addAddress($correo);      
-      $mail->Subject = utf8_decode("Contacto página Web");
-      $mail->Body = "Recibimos tu consulta, te responderemos a la brevedad.";
-      if (!$mail->send()) {
-        $msg = "Error al enviar el correo, intente nuevamente mas tarde.".$mail->ErrorInfo;
-      }
-      $mail->ClearAllRecipients(); //Borra los destinatarios
-  
-      //Envía ahora un correo a nosotros con los datos de la persona
-      $mail->addAddress("info@arnoldamorin.com.ar");
-      $mail->Subject = utf8_decode("Recibiste un mensaje desde tu página Web");
-      $mail->Body = "Te escribio $nombre cuyo correo es $correo y el siguiente mensaje:<br><br>$mensaje";
-  
-      if ($mail->send()) { // Si fue enviado correctamente redirecciona */
-      header('Location:confirmacion-envio.php');
-      } else {
-        $msg = "Error al enviar el correo, intente nuevamente mas tarde.".$mail->ErrorInfo;
-      }
-    } else {
-      $msg = "Complete todos los campos";
-    }
 
+if ($_POST) {
+  $nombre = $_POST["txtNombre"];
+  $correo = $_POST["txtCorreo"];
+  $mensaje = $_POST["txtMensaje"];
+
+  if ($nombre != "" && $correo != "") {
+    $mail = new PHPMailer();
+    $mail->IsSMTP();        
+    $mail->SMTPAuth = true;
+    $mail->Host = "mail.depcsuite.com"; // SMTP a utilizar
+    $mail->Port = 25;    
+    $mail->Username = "info@arnoldamorin.com.ar"; // Correo completo a utilizar
+    $mail->Password = "4RN0LD.5901?";    
+    $mail->From = "info@arnoldamorin.com.ar"; //Desde la cuenta donde enviamos
+    $mail->FromName = "Arnold Amorin";
+    $mail->IsHTML(true);
+    $mail->SMTPOptions = array(
+      'ssl' => array(
+        'verify_peer' => false,
+        'verify_peer_name' => false,
+        'allow_self_signed' => true
+      )
+    );
+    //Destinatarios
+    $mail->addAddress($correo);
+    $mail->addReplyTo("info@arnoldamorin.com.ar");
+    $mail->Subject = utf8_decode("Contacto página Web");
+    $mail->Body = "Recibimos tu consulta, te responderemos a la brevedad.";
+    if (!$mail->send()) {
+      $msg = "Error al enviar el correo, intente nuevamente mas tarde 1." . $mail->ErrorInfo;
+    }
+    $mail->ClearAllRecipients(); //Borra los destinatarios
+
+    //Envía ahora un correo a nosotros con los datos de la persona
+    $mail->addAddress("info@arnoldamorin.com.ar");
+    $mail->Subject = utf8_decode("Recibiste un mensaje desde tu página Web");
+    $mail->Body = "Te escribio $nombre cuyo correo es $correo y el siguiente mensaje:<br><br>$mensaje";
+
+    if ($mail->send()) { // Si fue enviado correctamente redirecciona */
+      header('Location:confirmacion-envio.php');
+    } else {
+      $msg = "Error al enviar el correo, intente nuevamente mas tarde." . $mail->ErrorInfo;
+    }
+  } else {
+    $msg = "Complete todos los campos";
   }
+}
 //}
 
 ?>
