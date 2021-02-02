@@ -31,7 +31,7 @@ if ($_POST) {
     $mail->SMTPAuth = true;
     $mail->Host = "mail.depcsuite.com"; // SMTP a utilizar  
     $mail->Username = "info@arnoldamorin.com.ar"; // Correo completo a utilizar
-    $mail->Password = "4RN0LD.5901?";
+    $mail->Password = "thv9b3vn";
     $mail->Port = 25;
     $mail->From = "info@arnoldamorin.com.ar"; //Desde la cuenta donde enviamos
     $mail->FromName = "Arnold Amorin";
@@ -82,7 +82,7 @@ if ($_POST) {
     </div>
     <div class="row">
       <div class="col-sm-6 col-12 mt-3">
-        <p>Si deseas contactarte conmigo podes enviarme un mail con este formulario</p>
+        <p>Si deseas contactarte conmigo podés enviarme un mail con este formulario.</p>
       </div>
       <div class="col-sm-6 col-12 mt-3">
         <form action="" method="POST" enctype="multipart/form-data">
