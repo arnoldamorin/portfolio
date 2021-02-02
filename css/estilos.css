@@ -50,16 +50,30 @@ p {
         padding: 0;
         margin: 0;
         width: fit-content;
+        border: 0;
+        color: transparent;
     }
+}
+
+@media(max-width:576px) {
+    #index .navbar {
+        position: fixed;
+    }
+}
+
+button:focus {
+    outline: 0;
+    /* outline: 5px auto -webkit-focus-ring-color; */
 }
 
 .navbar-toggler-icon {
     color: #E20000;
-    /*border:1px solid #E20000;*/
+    border: transparent;
     text-align: left;
     display: flex;
     align-self: center;
     font-size: 25px;
+    border: 0;
     /*/ border-radius: 11px;*/
     padding: 6px 0px;
     margin: 8px 0;
@@ -81,6 +95,7 @@ nav .nav-link {
     .navbar {
         padding: 0;
         margin-left: 7px;
+        border: 0;
     }
 }
 
@@ -614,7 +629,7 @@ footer .fa-whatsapp {
 
 #sobre-mi section .card {
     border-radius: 20px;
-    margin-bottom: 30px;
+    margin-bottom: 15px;
     border: 0;
 }
 
@@ -894,7 +909,7 @@ footer .fa-whatsapp {
 
 @media(max-width:576px) {
     #index main {
-        height: 75vh;
+        height: 81vh;
     }
 }
 

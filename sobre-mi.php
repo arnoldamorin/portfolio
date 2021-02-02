@@ -9,7 +9,7 @@ include_once("menu.php"); ?>
                     <div class="col-sm-10 col-12">
                         <P>Desarrollador Full Stack, Estudiante de Licenciatura en sistemas de información en la Universidad Nacional de Luján.</P>
                         <p>Responsable, proactivo y comprometido, en búsqueda de nuevos desafíos laborales donde pueda demostrar todo mi potencial y aprender más sobre desarrollo web y otras tecnologías de programación de la actualidad.</p>
-                        <div class="row">
+                        <div class="row py-3">
                             <div class="col-sm-1 col-1">
                                 <a href="https://github.com/arnoldamorin" target="_blank" title="Github"><i class="fab fa-github"></i></a>
                             </div>
@@ -25,7 +25,7 @@ include_once("menu.php"); ?>
                     </div>
                 </div>
             </div>
-            <div class="col-sm-4 col-12">
+            <div class="col-sm-4 col-12 pb-3">
                 <img src="images/arnold.png" alt="sobre-mi" title="Arnold Amorin" class="FP img-circle">
             </div>
         </div>
@@ -34,7 +34,7 @@ include_once("menu.php"); ?>
         <div class="color-gradiente">
             <div class="container">
                 <div class="row">
-                    <div class="col-12">
+                    <div class="col-12 py-2">
                         <h2 class="my-sm-5 text-white">Tecnologías de programación</h2>
                     </div>
                 </div>
