@@ -1,10 +1,10 @@
 <?php
 $pg = "contacto";
-include_once('PHPMailer\PHPMailer\PHPMailer');
-include_once('PHPMailer\PHPMailer\SMTP');
+include_once("PHPMailer/src/PHPMAILER.php");
+include_once("PHPMailer/src/SMTP.php");
 
 /*if ($_POST) {
-  /*if (isset($_POST['g-recaptcha'])) {    
+  if (isset($_POST['g-recaptcha'])) {    
     $captcha = $_POST['g-recaptcha'];   
   }
   if (!$captcha) {
@@ -27,12 +27,12 @@ if ($_POST) {
 
   if ($nombre != "" && $correo != "") {
     $mail = new PHPMailer();
-    $mail->IsSMTP();        
+    $mail->IsSMTP();
     $mail->SMTPAuth = true;
-    $mail->Host = "mail.depcsuite.com"; // SMTP a utilizar
-    $mail->Port = 25;    
+    $mail->Host = "mail.depcsuite.com"; // SMTP a utilizar  
     $mail->Username = "info@arnoldamorin.com.ar"; // Correo completo a utilizar
-    $mail->Password = "4RN0LD.5901?";    
+    $mail->Password = "4RN0LD.5901?";
+    $mail->Port = 25;
     $mail->From = "info@arnoldamorin.com.ar"; //Desde la cuenta donde enviamos
     $mail->FromName = "Arnold Amorin";
     $mail->IsHTML(true);
@@ -49,7 +49,7 @@ if ($_POST) {
     $mail->Subject = utf8_decode("Contacto página Web");
     $mail->Body = "Recibimos tu consulta, te responderemos a la brevedad.";
     if (!$mail->send()) {
-      $msg = "Error al enviar el correo, intente nuevamente mas tarde 1." . $mail->ErrorInfo;
+      $msg = "Error al enviar el correo, intente nuevamente mas tarde." . $mail->ErrorInfo;
     }
     $mail->ClearAllRecipients(); //Borra los destinatarios
 
@@ -81,19 +81,19 @@ if ($_POST) {
       </div>
     </div>
     <div class="row">
-      <div class="col-sm-6 col-12">
+      <div class="col-sm-6 col-12 mt-3">
         <p>Si deseas contactarte conmigo podes enviarme un mail con este formulario</p>
       </div>
-      <div class="col-sm-6 col-12">
+      <div class="col-sm-6 col-12 mt-3">
         <form action="" method="POST" enctype="multipart/form-data">
           <div class="mb-sm-3 form-group">
-            <input type="text" id="txtNombre" name="txtNombre" class="form-control shadow" placeholder="Nombre">
+            <input type="text" id="txtNombre" name="txtNombre" class="form-control shadow" placeholder="Nombre:">
           </div>
           <div class="mb-sm-3 form-group">
-            <input type="email" id="txtCorreo" name="txtCorreo" class="form-control shadow" placeholder="Correo">
+            <input type="email" id="txtCorreo" name="txtCorreo" class="form-control shadow" placeholder="Correo:">
           </div>
           <div class="mb-sm-3 form-group">
-            <textarea name="txtMensaje" id="txtMensaje" class="form-control shadow" cols="40" rows="5" style="resize: both;"></textarea>
+            <textarea name="txtMensaje" id="txtMensaje" class="form-control shadow" cols="40" rows="5" style="resize: both;" placeholder="Mensaje:"></textarea>
           </div>
           <div class="row">
             <div class="col-sm-6 col-10 form-group">

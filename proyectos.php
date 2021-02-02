@@ -9,7 +9,7 @@ include_once("menu.php"); ?>
         </div>
         <div class="row">
             <div class="col-sm-8 col-12">
-                <p>Estos son algunos de mis trabajos realizados durante el curso de Desarrollador web Full Stack</p>
+                <p>Estos son algunos de los trabajos realizados durante el curso de Desarrollador web Full Stack</p>
             </div>
         </div>
         <div class="row">

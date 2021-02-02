@@ -15,14 +15,12 @@ h1 {
         font-family: 'Montserrat', sans-serif;
         margin: auto;
         width: 100vw;
-        /* min-width:600px;
-        max-width:2000px;*/
     }
 }
 
 @media(max-width:576px) {
     h1 {
-        font-size: 25px;
+        font-size: 30px;
         font-weight: bold;
         margin-left: 6px;
     }
@@ -143,6 +141,14 @@ nav .active {
     padding: 5px 20px;
 }
 
+@media(max-width:576px) {
+    #index .btn-pdf,
+    #contacto .btn-pdf,
+    #proyectos .btn-pdf {
+        visibility: hidden;
+    }
+}
+
 .btn-pdf:hover {
     background-color: #E20000;
     color: white;
@@ -187,6 +193,14 @@ form .form-control {
 
 #contacto footer {
     padding-top: 20px;
+}
+
+@media(max-width:576px) {
+    #contacto .btn {
+        font-size: 12px;
+        padding: 5px 12px;
+        border-radius: 20px;
+    }
 }
 
 
@@ -506,7 +520,7 @@ footer .fa-whatsapp {
     #proyectos .card {
         border-radius: 20px;
         border-color: white;
-        height: 600px;
+        height: 450px;
         width: fit-content;
         margin-top: 10px;
     }
@@ -572,8 +586,14 @@ footer .fa-whatsapp {
 @media(max-width:576px) {
     #sobre-mi h2 {
         text-align: center;
-        font-size: 40px;
+        font-size: 25px;
         padding-top: 15px;
+    }
+}
+
+@media(max-width:576px) {
+    #sobre-mi .filagitlin {
+        padding-left: 4px;
     }
 }
 
@@ -587,7 +607,7 @@ footer .fa-whatsapp {
         color: white;
         font-size: 15px;
         border-radius: 20px;
-        padding: 5px 25px;
+        padding: 5px 10px;
     }
 }
 
@@ -605,7 +625,7 @@ footer .fa-whatsapp {
 
 #sobre-mi .FP {
     height: 340px;
-    width: auto;
+    width: 100%;
 }
 
 @media(max-width:576px) {
@@ -643,6 +663,12 @@ footer .fa-whatsapp {
 @media(max-width:576px) {
     #sobre-mi section .sc {
         padding: 0 5px;
+    }
+}
+
+@media(max-width:576px) {
+    #sobre-mi .columnas {
+        padding: 0 5px
     }
 }
 
@@ -730,6 +756,12 @@ footer .fa-whatsapp {
         align-content: center;
         max-width: 150px;
         height: 120px;
+    }
+}
+
+@media(max-width:576px) {
+    #sobre-mi .idihob {
+        padding: 0 5px;
     }
 }
 
@@ -842,12 +874,6 @@ footer .fa-whatsapp {
     }
 }
 
-@media(max-width:576px) {
-    #sobre-mi .contenidoEstudios {
-        height: 230px;
-    }
-}
-
 @media(min-width:768px) {
     #sobre-mi .contenidoExperiencia {
         height: 171px;
@@ -855,8 +881,9 @@ footer .fa-whatsapp {
 }
 
 @media(max-width:576px) {
-    #sobre-mi .contenidoExperiencia {
-        height: 230px;
+    #sobre-mi .contenidoExperiencia,
+    #sobre-mi .contenidoEstudios {
+        height: 180px;
     }
 }
 
@@ -884,7 +911,7 @@ footer .fa-whatsapp {
 @media(max-width:576px) {
     #sobre-mi .festudios .card,
     #sobre-mi .fexp .card {
-        height: 430px;
+        height: 380px;
     }
 }
 
@@ -996,7 +1023,7 @@ footer .fa-whatsapp {
         font-weight: 550;
         font-size: 15px;
         padding: 8px 25px;
-        margin: 20px 20;
+        margin: 30px 20;
         border-color: transparent;
     }
 }

@@ -9,14 +9,14 @@ include_once("menu.php"); ?>
                     <div class="col-sm-10 col-12">
                         <P>Desarrollador Full Stack, Estudiante de Licenciatura en sistemas de información en la Universidad Nacional de Luján.</P>
                         <p>Responsable, proactivo y comprometido, en búsqueda de nuevos desafíos laborales donde pueda demostrar todo mi potencial y aprender más sobre desarrollo web y otras tecnologías de programación de la actualidad.</p>
-                        <div class="row py-3">
-                            <div class="col-sm-1 col-1">
+                        <div class="row py-3 filagitlin">
+                            <div class="col-sm-1 col-1 m-0">
                                 <a href="https://github.com/arnoldamorin" target="_blank" title="Github"><i class="fab fa-github"></i></a>
                             </div>
-                            <div class="col-sm-1 col-1 mr-sm-3">
+                            <div class="col-sm-1 col-1 mr-3 ml-sm-3">
                                 <a href="https://www.linkedin.com/in/arnold-amorin-0382bb123/" target="_blank" title="Linkedin"><i class="fab fa-linkedin-in"></i></a>
                             </div>
-                            <div class="col-sm-6 col-8 ml-3">
+                            <div class="col-sm-7 col-8 ml-sm-3 ">
                                 <form class="form-inline d-flex justify-content-between">
                                     <a href="CV_ARNOLD_AMORIN.pdf" download="CV_ARNOLD_AMORIN.pdf" class="btn-pdf">DESCARGÁ MI CV <i class="fas fa-download"></i></a>
                                 </form>
@@ -146,27 +146,27 @@ include_once("menu.php"); ?>
     </section>
     <section id="idiomashobies" class="idiomashobbies">
         <div class="container">
-            <div class="row py-4">
-                <div class="col-sm-6 col-12 mt-2">
+            <div class="row py-2">
+                <div class="col-sm-6 col-12 mt-2 idihob">
                     <div class="card shadow-lg">
                         <div class="row">
                             <div class="col-sm-3 col-4">
                                 <i class="fas fa-comment-alt"></i>
                             </div>
-                            <div class="col-sm-4 offset-1 col-7 mt-2">
+                            <div class="col-sm-4 offset-1 col-6 mt-2 pr-0">
                                 <h4 class="titulosnegrita">IDIOMAS</h4>
                                 <p class="pih">INGLES - Intermedio <br> ESPAÑOL - Nativo</p>
                             </div>
                         </div>
                     </div>
                 </div>
-                <div class="col-sm-6 col-12 mt-2">
+                <div class="col-sm-6 col-12 mt-2 idihob">
                     <div class="card shadow-lg">
                         <div class="row">
                             <div class="col-sm-3 col-4">
                                 <i class="fas fa-star"></i>
                             </div>
-                            <div class="col-sm-4 offset-1 col-7 mt-2">
+                            <div class="col-sm-4 offset-1 col-6 mt-2">
                                 <h4 class="titulosnegrita">HOBBIES</h4>
                                 <p class="pih">Escuchar música <br> Hacer actividades scout</p>
                             </div>
@@ -178,7 +178,7 @@ include_once("menu.php"); ?>
     </section>
     <section id="Experiencia" class="fexp">
         <div class="container">
-            <div class="row py-4">
+            <div class="row py-3">
                 <div class="col-sm-2 col-12 text-center">
                     <i class="fas fa-briefcase"></i>
                 </div>
@@ -186,8 +186,8 @@ include_once("menu.php"); ?>
                     <h2 class="exp">Experiencia laboral</h2>
                 </div>
             </div>
-            <div class="row py-sm-4">
-                <div class="col-sm-6 col-12">
+            <div class="row py-3">
+                <div class="col-sm-6 col-12 columnas">
                     <div class="card shadow-lg">
                         <div class="card-block position-relative">
                             <div class="row">
@@ -207,7 +207,7 @@ include_once("menu.php"); ?>
                         </div>
                     </div>
                 </div>
-                <div class="col-sm-6 col-12">
+                <div class="col-sm-6 col-12 columnas">
                     <div class="card shadow-lg ">
                         <div class="card-block position-relative">
                             <div class="row">
@@ -233,16 +233,16 @@ include_once("menu.php"); ?>
     </section>
     <section id="estudios" class="festudios">
         <div class="container">
-            <div class="row py-sm-4">
+            <div class="row py-3">
                 <div class="col-sm-2 col-12 text-center">
-                    <i class="fas fa-graduation-cap m-4"></i>
+                    <i class="fas fa-graduation-cap m-3 m-sm-0"></i>
                 </div>
-                <div class="col-sm-6 col-12 px-0 my-sm-4 py-sm-3">
+                <div class="col-sm-6 col-12 px-0 px-0 mt-3">
                     <h2 class="est">Estudios</h2>
                 </div>
             </div>
-            <div class="row py-sm-4">
-                <div class="col-sm-6 col-12">
+            <div class="row py-3">
+                <div class="col-sm-6 col-12 columnas">
                     <div class="card shadow-lg">
                         <div class="card-block position-relative">
                             <div class="row">
@@ -264,7 +264,7 @@ include_once("menu.php"); ?>
                         </div>
                     </div>
                 </div>
-                <div class="col-sm-6 col-12">
+                <div class="col-sm-6 col-12 columnas">
                     <div class="card shadow-lg">
                         <div class="card-block position-relative">
                             <div class="row">
