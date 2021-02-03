@@ -29,11 +29,13 @@ if ($_POST) {
   if ($nombre != "" && $correo != "") {
     $mail = new PHPMailer();
     $mail->IsSMTP();
+    $mail->SMTPDebug = 2;
     $mail->SMTPAuth = true;
     $mail->Host = "mail.depcsuite.com"; // SMTP a utilizar  
     $mail->Username = "info@arnoldamorin.com.ar"; // Correo completo a utilizar
     $mail->Password = "thv9b3vn";
-    $mail->Port = 25;
+    $mail->SMTPSecure = "tls";                         
+    $mail->Port = 587; 
     $mail->From = "info@arnoldamorin.com.ar"; //Desde la cuenta donde enviamos
     $mail->FromName = "Arnold Amorin";
     $mail->IsHTML(true);
@@ -50,8 +52,7 @@ if ($_POST) {
     $mail->Subject = utf8_decode("Contacto página Web");
     $mail->Body = "Recibimos tu consulta, te responderemos a la brevedad.";
     if (!$mail->send()) {
-      $msg = "Error al enviar el correo, intente nuevamente mas tarde." . $mail->ErrorInfo;
-      
+      $msg = "Error al enviar el correo, intente nuevamente mas tarde." . $mail->ErrorInfo;      
     }
     $mail->ClearAllRecipients(); //Borra los destinatarios
 
