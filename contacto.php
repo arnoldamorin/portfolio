@@ -36,14 +36,15 @@ if ($_POST) { /* es postback */
     $mail = new PHPMailer();
     $mail->IsSMTP();
     $mail->SMTPDebug = SMTP::DEBUG_SERVER;    
-    $mail->SMTPAuth = true;
-    $mail->Host = 'mail.depcsuite.com'; // SMTP a utilizar
-    $mail->Username = 'info@arnoldamorin.com.ar'; // Correo completo a utilizar
-    $mail->Password = 'thv9b3vn';
-    $mail->Port = 25;   
-    $mail->From = 'info@arnoldamorin.com.ar'; //Desde la cuenta donde enviamos
+    $mail->SMTPSecure = 'tls';
+    $mail->SMTPAuth = true;    
+    $mail->Host = 'smtp.gmail.com'; // SMTP a utilizar
+    $mail->Username = 'aamorin.ar@gmail.com'; // Correo completo a utilizar
+    $mail->Password = 'mamcimparse';
+    $mail->Port = 465;   
+    $mail->From = 'aamorin.ar@gmail.com'; //Desde la cuenta donde enviamos
     $mail->FromName = 'Arnold Amorin';
-    $mail->IsHTML(true);
+    
     $mail->SMTPOptions = array(
       'ssl' => array(
         'verify_peer' => false,
@@ -51,6 +52,7 @@ if ($_POST) { /* es postback */
         'allow_self_signed' => true
       )
     );
+    $mail->IsHTML(true);
     //Destinatarios
     $mail->addAddress($correo);
     $mail->Subject = utf8_decode("Contacto página Web");
@@ -61,7 +63,7 @@ if ($_POST) { /* es postback */
     $mail->ClearAllRecipients(); //Borra los destinatarios
 
     //Envía ahora un correo a nosotros con los datos de la persona
-    $mail->addAddress("info@arnoldamorin.com.ar");
+    $mail->addAddress("aamorin.ar@gmail.com");
     $mail->Subject = utf8_decode("Recibiste un mensaje desde tu página Web");
     $mail->Body = "Te escribio $nombre cuyo correo es $correo el siguiente mensaje:<br><br>$mensaje";
 
@@ -89,7 +91,7 @@ if ($_POST) { /* es postback */
     </div>
     <div class="row">
       <div class="col-sm-6 col-12 mt-3">
-        <p>Si deseas contactarte conmigo podés enviarme un mail con este formulario.</p>
+        <p>Si deseas contactarte conmigo podés enviarme GG un mail con este formulario.</p>
       </div>
       <div class="col-sm-6 col-12 mt-3">
         <form action="" method="POST" enctype="multipart/form-data">
