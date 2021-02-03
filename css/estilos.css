@@ -26,6 +26,12 @@ h1 {
     }
 }
 
+@media(min-width:768px) and (max-width:1024px) {
+    h1 {
+        font-size: 30px;
+    }
+}
+
 p {
     color: #6A6A6A;
     font-weight: 500;
@@ -124,6 +130,14 @@ nav .active {
         font-size: 20px;
         padding: 0px;
         text-align: left;
+    }
+}
+
+@media(min-width:768px) and (max-width:1024px) {
+    .nav-item {
+        font-size: 15px;
+        padding: 0 10px;
+        margin: 0;
     }
 }
 
@@ -233,6 +247,13 @@ form .form-control {
     #contacto main,
     #proyectos main {
         height: auto;
+    }
+}
+
+@media(min-width:768px) and (max-width:1024px) {
+    #contacto main,
+    #proyectos main {
+        height: 68vh;
     }
 }
 
@@ -374,12 +395,18 @@ footer .fa-whatsapp {
     font-size: 12px;
     height: 50px;
     padding-top: 20px;
+    width: 400px;
 }
 
 @media(max-width:576px) {
     #proyectos footer,
     #sobre-mi footer {
         font-size: 15px;
+        padding: 0;
+    }
+    #proyectos footer .colf,
+    #sobre-mi footer .colf {
+        width: 400px;
     }
 }
 
@@ -387,6 +414,7 @@ footer .fa-whatsapp {
 #sobre-mi .fa-github {
     font-size: 30px;
     color: #E20000;
+    padding-right: 0;
 }
 
 #proyectos footer .fa-linkedin-in,
@@ -437,6 +465,16 @@ footer .fa-whatsapp {
     }
 }
 
+@media(min-width:768px) and (max-width:1024px) {
+    #proyectos,
+    #sobre-mi {
+        background-image: url(../images/fondo-proyectos.png);
+        background-size: 100%;
+        background-position-y: 0;
+        background-position-x: center;
+    }
+}
+
 #proyectos .btn-p1 {
     background-color: #E20000;
     color: white;
@@ -456,6 +494,14 @@ footer .fa-whatsapp {
     #proyectos .btn-p1 {
         font-size: 10px;
         padding: 7px;
+    }
+}
+
+@media(min-width:768px) and (max-width:1024px) {
+    #proyectos .btn-p1 {
+        font-size: 10px;
+        padding: 5px;
+        margin-left: 2px;
     }
 }
 
@@ -488,6 +534,16 @@ footer .fa-whatsapp {
     }
 }
 
+@media(min-width:768px) and (max-width:1024px) {
+    #proyectos .btn-p2 {
+        font-size: 9px;
+        position: absolute;
+        right: 2px;
+        bottom: 7px;
+        margin-right: 3px;
+    }
+}
+
 #proyectos h2 {
     color: white;
     font-size: 16px;
@@ -499,6 +555,12 @@ footer .fa-whatsapp {
 @media(max-width:576px) {
     #proyectos h2 {
         font-size: 30px;
+    }
+}
+
+@media(min-width:768px) and (max-width:1024px) {
+    #proyectos h2 {
+        font-size: 12px;
     }
 }
 
@@ -530,6 +592,12 @@ footer .fa-whatsapp {
     }
 }
 
+@media(min-width:768px) and (max-width:1024px) {
+    #proyectos p {
+        font-size: 14px;
+    }
+}
+
 @media(max-width:568px) {
     #proyectos p {
         font-size: 12px;
@@ -548,6 +616,12 @@ footer .fa-whatsapp {
     }
 }
 
+@media(min-width:768px) and (max-width:1024px) {
+    #proyectos .card-title {
+        padding: 3px;
+    }
+}
+
 #proyectos .card {
     border-radius: 20px;
     border-color: white;
@@ -561,6 +635,16 @@ footer .fa-whatsapp {
         border-radius: 20px;
         border-color: white;
         height: 450px;
+        width: fit-content;
+        margin-top: 10px;
+    }
+}
+
+@media(min-width:768px) and (max-width:1024px) {
+    #proyectos .card {
+        border-radius: 20px;
+        border-color: white;
+        height: 300px;
         width: fit-content;
         margin-top: 10px;
     }
@@ -590,6 +674,19 @@ footer .fa-whatsapp {
     margin: 5px 5px;
 }
 
+@media(min-width:768px) and (max-width:1024px) {
+    #proyectos p {
+        font-size: 11px;
+    }
+    #proyectos .card-text {
+        padding: 7px;
+        margin: 2px 2px;
+    }
+    #proyectos .descr {
+        font-size: 16px;
+    }
+}
+
 #proyectos .card-title {
     padding: 0;
     margin: 0;
@@ -604,6 +701,13 @@ footer .fa-whatsapp {
     #proyectos .btn-col-p,
     #proyectos .btn-col-d {
         padding: 0 25px;
+    }
+}
+
+@media(min-width:768px) and (max-width:1024px) {
+    #proyectos .btn-col-p,
+    #proyectos .btn-col-d {
+        padding: 0 5px;
     }
 }
 
@@ -625,6 +729,12 @@ footer .fa-whatsapp {
     background: -ms-linear-gradient(left, rgba(107, 35, 35, 1) 0%, rgba(231, 55, 39, 1) 69%, rgba(231, 55, 39, 1) 100%);
     background: linear-gradient(to right, rgba(107, 35, 35, 1) 0%, rgba(231, 55, 39, 1) 69%, rgba(231, 55, 39, 1) 100%);
     filter: progid: DXImageTransform.Microsoft.gradient( startColorstr='#6b2323', endColorstr='#e73727', GradientType=1);
+}
+
+@media(min-width:768px) and (max-width:1024px) {
+    #proyectos .color-gradiente {
+        padding: 10px 5px;
+    }
 }
 
 
@@ -654,6 +764,7 @@ footer .fa-whatsapp {
 
 #sobre-mi footer {
     background-color: #EDEDED;
+    width: 100%;
 }
 
 @media(max-width:576px) {
@@ -663,6 +774,16 @@ footer .fa-whatsapp {
         font-size: 15px;
         border-radius: 20px;
         padding: 5px 10px;
+    }
+}
+
+@media(min-width:768px) and (max-width:1024px) {
+    #sobre-mi .btn-pdf {
+        background-color: #E20000;
+        color: white;
+        font-size: 12px;
+        border-radius: 20px;
+        padding: 5px 15px;
     }
 }
 
@@ -687,6 +808,14 @@ footer .fa-whatsapp {
     #sobre-mi .FP {
         align-items: center;
         max-width: fit-content;
+        height: auto;
+    }
+}
+
+@media(min-width:768px) and (max-width:1024px) {
+    #sobre-mi .FP {
+        align-items: center;
+        width: 100%;
         height: auto;
     }
 }
@@ -722,7 +851,20 @@ footer .fa-whatsapp {
     }
 }
 
+@media(min-width:768px) and (max-width:1024px) {
+    #sobre-mi section .card {
+        margin-bottom: 10px;
+        border-color: white;
+    }
+}
+
 @media(max-width:576px) {
+    #sobre-mi section .sc {
+        padding: 0 5px;
+    }
+}
+
+@media(min-width:768px) and (max-width:1024px) {
     #sobre-mi section .sc {
         padding: 0 5px;
     }
@@ -748,12 +890,32 @@ footer .fa-whatsapp {
         font-size: 75px;
         max-width: fit-content;
         max-height: fit-content;
-        padding: 22px;
+        padding: 20px;
+        text-align: center;
+    }
+}
+
+@media(min-width:768px) and (max-width:1024px) {
+    #sobre-mi .fa-star {
+        font-size: 75px;
+        max-width: fit-content;
+        max-height: fit-content;
+        padding: 25px;
         text-align: center;
     }
 }
 
 @media(max-width:576px) {
+    #sobre-mi .fa-comment-alt {
+        font-size: 75px;
+        max-width: fit-content;
+        max-height: fit-content;
+        padding: 25px;
+        text-align: center;
+    }
+}
+
+@media(min-width:768px) and (max-width:1024px) {
     #sobre-mi .fa-comment-alt {
         font-size: 75px;
         max-width: fit-content;
@@ -772,6 +934,12 @@ footer .fa-whatsapp {
     #sobre-mi section .titulosnegrita {
         font-size: 20px;
         padding-left: 5px;
+    }
+}
+
+@media(max-width:576px) {
+    #sobre-mi section .titulosnegrita {
+        padding-left: 0;
     }
 }
 
@@ -802,6 +970,12 @@ footer .fa-whatsapp {
 @media(max-width:568px) {
     #sobre-mi section .pih {
         font-size: 12px;
+    }
+}
+
+@media(min-width:768px) and (max-width:1024px) {
+    #sobre-mi section .pih {
+        font-size: 11px;
     }
 }
 
@@ -846,6 +1020,12 @@ footer .fa-whatsapp {
     }
 }
 
+@media(min-width:768px) and (max-width:1024px) {
+    #sobre-mi section .titulosgrises {
+        font-size: 15px;
+    }
+}
+
 @media(max-width:568px) {
     #sobre-mi section .titulosgrises {
         padding: 0 50px;
@@ -871,6 +1051,12 @@ footer .fa-whatsapp {
     }
 }
 
+@media(min-width:768px) and (max-width:1024px) {
+    #sobre-mi section .subtitulovioleta {
+        font-size: 15px;
+    }
+}
+
 @media(max-width:568px) {
     #sobre-mi section .subtitulovioleta {
         font-size: 14px;
@@ -889,6 +1075,12 @@ footer .fa-whatsapp {
     }
 }
 
+@media(min-width:768px) and (max-width:1024px) {
+    #sobre-mi section .subtituloRojo {
+        font-size: 14px;
+    }
+}
+
 #sobre-mi section .fecha {
     font-weight: normal;
     color: #6a6a6a;
@@ -898,6 +1090,12 @@ footer .fa-whatsapp {
 @media(max-width:576px) {
     #sobre-mi section .fecha {
         padding: 0 50px;
+    }
+}
+
+@media(min-width:768px) and (max-width:1024px) {
+    #sobre-mi section .fecha {
+        font-size: 14px;
     }
 }
 
@@ -917,10 +1115,10 @@ footer .fa-whatsapp {
     #sobre-mi .btn-exp {
         font-size: 12px;
         padding: 8px 15px;
-        margin: 5px 50px;
+        margin: 5px 10px;
         display: flex;
         position: absolute;
-        right: -15px;
+        right: 15px;
         bottom: -55px;
     }
 }
@@ -941,23 +1139,38 @@ footer .fa-whatsapp {
     #sobre-mi .btn-est {
         font-size: 12px;
         padding: 8px 18px;
-        margin: 5px 50px;
+        margin: 5px 10px;
         display: flex;
         position: absolute;
-        right: -15px;
+        right: 15px;
         bottom: -55px;
     }
 }
 
-@media(min-width:768px) {
+@media(min-width:769px) {
     #sobre-mi .contenidoEstudios {
         height: 160px;
     }
 }
 
-@media(min-width:768px) {
+@media(min-width:769px) {
     #sobre-mi .contenidoExperiencia {
         height: 171px;
+        padding: 0;
+    }
+}
+
+@media(min-width:768px) and (max-width:1024px) {
+    #sobre-mi .contenidoExperiencia {
+        height: 180px;
+        padding: 0;
+    }
+}
+
+@media(min-width:768px) and (max-width:1024px) {
+    #sobre-mi .contenidoEstudios {
+        height: 170px;
+        padding: 0;
     }
 }
 
@@ -965,10 +1178,12 @@ footer .fa-whatsapp {
     #sobre-mi .contenidoExperiencia,
     #sobre-mi .contenidoEstudios {
         height: 180px;
+        padding-right: 0;
+        width: 380px;
     }
 }
 
-@media(min-width:768px) {
+@media(min-width:768px) and (max-width:1024px) {
     #sobre-mi .card-block {
         padding: 0;
         margin: 0;
@@ -996,6 +1211,13 @@ footer .fa-whatsapp {
     }
 }
 
+@media(min-width:768px) and (max-width:1024px) {
+    #sobre-mi .festudios .card,
+    #sobre-mi .fexp .card {
+        height: 220px;
+    }
+}
+
 #sobre-mi .festudios {
     background-color: #EDEDED;
 }
@@ -1003,6 +1225,7 @@ footer .fa-whatsapp {
 @media(max-width:576px) {
     #sobre-mi footer .container {
         background-color: #EDEDED;
+        padding-right: 0;
     }
 }
 
@@ -1033,12 +1256,35 @@ footer .fa-whatsapp {
     #index {
         background-image: url(../images/index375.png);
         background-size: 160%;
-        background-position-x: -130px;
+        background-position-x: -140px;
         background-position-y: -140px;
     }
 }
 
-@media(min-width:768px) {
+@media(min-width:768px) and (max-width:1024px) {
+    #index {
+        background-image: url(../images/index.png);
+        background-size: 190%;
+        background-position-x: center;
+        background-position-y: 100px;
+    }
+}
+
+@media(min-width:768px) and (max-width:1024px) {
+    #index .arnold {
+        color: white;
+        font-size: 25px;
+        font-weight: 300;
+        border: 1px solid white;
+        width: 100%;
+        text-align: center;
+        margin: 20px 0;
+        padding: 10px 5px;
+        text-shadow: 0 0 5px #000000;
+    }
+}
+
+@media(min-width:1024px) {
     #index .arnold {
         color: white;
         font-size: 22px;

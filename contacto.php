@@ -2,6 +2,7 @@
 $pg = "contacto";
 include_once("PHPMailer/src/PHPMAILER.php");
 include_once("PHPMailer/src/SMTP.php");
+include_once("PHPMailer/src/Exception.php");
 
 /*if ($_POST) {
   if (isset($_POST['g-recaptcha'])) {    
@@ -50,6 +51,7 @@ if ($_POST) {
     $mail->Body = "Recibimos tu consulta, te responderemos a la brevedad.";
     if (!$mail->send()) {
       $msg = "Error al enviar el correo, intente nuevamente mas tarde." . $mail->ErrorInfo;
+      
     }
     $mail->ClearAllRecipients(); //Borra los destinatarios
 
@@ -96,23 +98,22 @@ if ($_POST) {
             <textarea name="txtMensaje" id="txtMensaje" class="form-control shadow" cols="40" rows="5" style="resize: both;" placeholder="Mensaje:"></textarea>
           </div>
           <div class="row">
-            <div class="col-sm-6 col-10 form-group">
+            <div class="col-lg-6 col-10 form-group">
               <div class="g-recaptcha" data-sitekey="6LdSuT8aAAAAACnNop88wUc6CQeibKmFYVhCZKTJ"></div>
             </div>
-            <div class="col-sm-6 col-12 form-group">
-              <div class="text-sm-right text-center">
+            <div class="col-lg-6 col-12 form-group">
+              <div class="text-sm-left  text-lg-right text-center">
                 <button type="submit" class="btn">ENVIAR</button>
               </div>
             </div>
+          </div>
         </form>
         <?php if (isset($msg)) { ?>
           <div class="alert alert-danger col-6" role="alert"><?= $msg ?></div>
         <?php }  ?>
       </div>
     </div>
-  </div>
-  </div>
-  </div>
+  </div> 
 </main>
 <?php
 include_once("footer.php"); ?>

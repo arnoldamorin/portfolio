@@ -6,7 +6,7 @@ include_once("menu.php"); ?>
             <div class="col-sm-6 col-12">
                 <h1> Sobre mí</h1>
                 <div class="row">
-                    <div class="col-sm-10 col-12">
+                    <div class="col-sm-12 col-lg-10 col-12">
                         <P>Desarrollador Full Stack, Estudiante de Licenciatura en sistemas de información en la Universidad Nacional de Luján.</P>
                         <p>Responsable, proactivo y comprometido, en búsqueda de nuevos desafíos laborales donde pueda demostrar todo mi potencial y aprender más sobre desarrollo web y otras tecnologías de programación de la actualidad.</p>
                         <div class="row py-3 filagitlin">
@@ -25,7 +25,7 @@ include_once("menu.php"); ?>
                     </div>
                 </div>
             </div>
-            <div class="col-sm-4 col-12 pb-3">
+            <div class="col-sm-6 col-lg-4 col-12 pb-3">
                 <img src="images/arnold.png" alt="sobre-mi" title="Arnold Amorin" class="FP img-circle">
             </div>
         </div>
@@ -35,7 +35,7 @@ include_once("menu.php"); ?>
             <div class="container">
                 <div class="row">
                     <div class="col-12 py-2">
-                        <h2 class="my-sm-5 text-white">Tecnologías de programación</h2>
+                        <h2 class="my-lg-5 my-sm-2 text-white">Tecnologías de programación</h2>
                     </div>
                 </div>
                 <div class="row d-flex justify-content-center">
@@ -149,11 +149,11 @@ include_once("menu.php"); ?>
             <div class="row py-2">
                 <div class="col-sm-6 col-12 mt-2 idihob">
                     <div class="card shadow-lg">
-                        <div class="row">
-                            <div class="col-sm-3 col-4">
+                        <div class="row w-100">
+                            <div class="col-sm-4 col-lg-3 col-4">
                                 <i class="fas fa-comment-alt"></i>
                             </div>
-                            <div class="col-sm-4 offset-1 col-6 mt-2 pr-0">
+                            <div class="col-sm-6 col-lg-4 offset-1 col-6 mt-2 pr-0">
                                 <h4 class="titulosnegrita">IDIOMAS</h4>
                                 <p class="pih">INGLES - Intermedio <br> ESPAÑOL - Nativo</p>
                             </div>
@@ -162,11 +162,11 @@ include_once("menu.php"); ?>
                 </div>
                 <div class="col-sm-6 col-12 mt-2 idihob">
                     <div class="card shadow-lg">
-                        <div class="row">
-                            <div class="col-sm-3 col-4">
+                        <div class="row w-100">
+                            <div class="col-sm-4 col-lg-3 col-4">
                                 <i class="fas fa-star"></i>
                             </div>
-                            <div class="col-sm-4 offset-1 col-6 mt-2">
+                            <div class="col-sm-6 col-lg-4 offset-1 col-6 mt-2">
                                 <h4 class="titulosnegrita">HOBBIES</h4>
                                 <p class="pih">Escuchar música <br> Hacer actividades scout</p>
                             </div>
@@ -190,15 +190,15 @@ include_once("menu.php"); ?>
                 <div class="col-sm-6 col-12 columnas">
                     <div class="card shadow-lg">
                         <div class="card-block position-relative">
-                            <div class="row">
+                            <div class="row w-100">
                                 <div class="col-sm-3 col-12">
                                     <img class="logo img-fluid" src="images/Id sa.png">
                                 </div>
-                                <div class="col-sm-7 offset-sm-1 col-12 my-2 pt-1 contenidoExperiencia">
+                                <div class="col-sm-7 offset-sm-1 col-11 my-2 pt-1 contenidoExperiencia">
                                     <h3 class="titulosgrises m-0">Planeación y control de la producción</h3>
                                     <h3 class="subtitulovioleta m-0">Industrias Delgado S.A.</h3>
                                     <h3 class="fecha mt-2">NOV 2017 - MAR 2018</h3>
-                                    <ul class="m-sm-0 px-sm-3 m-2">
+                                    <ul class="m-sm-0 px-sm-3 m-0">
                                         <li class="pih">Planeación de la producción a corto y mediano plazo, priorizando los clientes de alta importancia de Ia empresa.</li>
                                     </ul>
                                     <a href="https://www.industriasdelgado.com.ar/" target="_blank" class="btn-exp rounded-pill">VER EMPRESA</a>
@@ -210,15 +210,15 @@ include_once("menu.php"); ?>
                 <div class="col-sm-6 col-12 columnas">
                     <div class="card shadow-lg ">
                         <div class="card-block position-relative">
-                            <div class="row">
+                            <div class="row w-100">
                                 <div class="col-sm-3 col-12">
                                     <img class="logo img-fluid" src="images/Pavir.png">
                                 </div>
-                                <div class="col-sm-7 offset-sm-1 my-2 pt-1 contenidoExperiencia">
+                                <div class="col-sm-7 offset-sm-1 my-2 pt-1 col-11 contenidoExperiencia">
                                     <h3 class="titulosgrises m-0">Community manager y Soporte de sistemas</h3>
                                     <h3 class="subtitulovioleta m-0">Paissan Hnos. S.A.</h3>
                                     <h3 class="fecha mt-2">FEB 2016 - PRESENTE</h3>
-                                    <ul class="m-sm-0 px-sm-3 m-2">
+                                    <ul class="m-sm-0 px-sm-3 m-1">
                                         <li class="pih">Manejo de redes sociales de la marca Pavir.</li>
                                         <li class="pih">Soporte técnico de sistemas, solucionando problemas básicos y frecuentes en la empresa.</li>
                                     </ul>
@@ -245,11 +245,11 @@ include_once("menu.php"); ?>
                 <div class="col-sm-6 col-12 columnas">
                     <div class="card shadow-lg">
                         <div class="card-block position-relative">
-                            <div class="row">
+                            <div class="row w-100">
                                 <div class="col-sm-3 col-12">
                                     <img class="logo img-fluid" src="images/unlu.png">
                                 </div>
-                                <div class="col-sm-7 offset-sm-1 my-2 pt-1 contenidoEstudios">
+                                <div class="col-sm-7 offset-sm-1 my-2 pt-1 col-11 contenidoEstudios">
                                     <h3 class="titulosgrises m-0">Licenciatura en Sistemas de Información</h3>
                                     <h3 class="subtituloRojo m-0">Universidad Nacional de Luján</h3>
                                     <h3 class="fecha mt-2">MAR 2014 - PRESENTE</h3>
@@ -267,15 +267,15 @@ include_once("menu.php"); ?>
                 <div class="col-sm-6 col-12 columnas">
                     <div class="card shadow-lg">
                         <div class="card-block position-relative">
-                            <div class="row">
+                            <div class="row w-100">
                                 <div class="col-sm-3 col-12">
                                     <img class="logo img-fluid" src="images/depc.png">
                                 </div>
-                                <div class="col-sm-7 col-12 offset-sm-1 my-2 pt-1 contenidoEstudios">
+                                <div class="col-sm-7 col-12 offset-sm-1 col-11 my-2 pt-1 contenidoEstudios">
                                     <h3 class="titulosgrises m-0">Desarrollador web Full Stack</h3>
                                     <h3 class="subtituloRojo m-0">DePC Suite</h3>
                                     <h3 class="fecha mt-2">AGO 2020 - DIC 2020</h3>
-                                    <ul class="m-sm-0 px-sm-3 m-2">
+                                    <ul class="m-sm-0 px-sm-3 m-1">
                                         <li class="pih">Desarrollo de soluciones web para proyectos múltiples mayormente mediante el uso de PHP junto con Laravel para el Backend, y Bootstrap, JavaScript y jQuery para el Frontend.</li>
                                     </ul>
                                     <a href="https://depcsuite.com/" target="_blank" class="btn-est rounded-pill">Ver DePC</a>

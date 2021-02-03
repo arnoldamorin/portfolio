@@ -2,14 +2,14 @@
 include_once("menu.php"); ?>
 <main>
     <div class="container">
-        <div class="row mb-sm-5">
+        <div class="row mb-lg-5">
             <div class="col-12">
                 <h1> Mis Proyectos</h1>
             </div>
         </div>
         <div class="row">
             <div class="col-sm-8 col-12">
-                <p>Estos son algunos de los trabajos realizados durante el curso de Desarrollador web Full Stack</p>
+                <p class="descr">Estos son algunos de los trabajos realizados durante el curso de desarrollador full stack.</p>
             </div>
         </div>
         <div class="row">

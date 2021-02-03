@@ -22,7 +22,7 @@
 
 <body id=<?php echo $pg ?>>
     <header>
-        <div class="container mb-sm-5 px-sm-3 py-sm-3">
+        <div class="container mb-lg-5 mb-sm-2 px-sm-3 py-sm-3">
             <nav class="navbar navbar-expand-md px-sm-0 ">
                 <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarsExampleDefault"
                     aria-controls="navbarsExampleDefault" aria-expanded="false" aria-label="Toggle navigation">
@@ -30,25 +30,25 @@
                 </button>
                 <div class="collapse navbar-collapse" id="navbarsExampleDefault">
                     <ul class="navbar-nav mr-sm-auto">
-                        <li class="nav-item pr-sm-5">
+                        <li class="nav-item pr-lg-5">
                             <a class="nav-link <?php echo $pg == "index"? "active px-sm-3 rounded-pill" : ""; ?> "
                                 href="index.php">Inicio</a>
                         </li>
-                        <li class="nav-item pr-sm-5">
+                        <li class="nav-item pr-lg-5">
                             <a class="nav-link <?php echo $pg == "sobre-mi"? "active px-sm-3 rounded-pill" : ""; ?>"
                                 href="sobre-mi.php">Sobre Mí</a>
                         </li>
-                        <li class="nav-item pr-sm-5">
+                        <li class="nav-item pr-lg-5">
                             <a class="nav-link <?php echo $pg == "proyectos"? "active px-sm-3 rounded-pill" : ""; ?>"
                                 href="proyectos.php">Proyectos</a>
                         </li>
-                        <li class="nav-item pr-sm-5">
+                        <li class="nav-item pr-lg-5">
                             <a class="nav-link <?php echo $pg == "contacto"? "active px-sm-3 rounded-pill" : ""; ?>"
                                 href="contacto.php">Contacto</a>
                         </li>
                     </ul>
                     <?php if ($pg != "sobre-mi"){?>
-                    <form class="form-inline my-sm-2 my-lg-0">
+                    <form class="form-inline  my-lg-0">
                         <a href="CV_ARNOLD_AMORIN.pdf" download="CV_ARNOLD_AMORIN.pdf"class="btn-pdf">DESCARGAR MI CV <i class="fas fa-download"></i></a>
                     </form>
                     <?php }?>
