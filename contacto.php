@@ -1,8 +1,14 @@
 <?php
 $pg = "contacto";
-include_once("PHPMailer/src/PHPMAILER.php");
+include_once("PHPMailer/src/PHPMailer.php");
 include_once("PHPMailer/src/SMTP.php");
 include_once("PHPMailer/src/Exception.php");
+
+/*use PHPMailer\PHPMailer\PHPMailer;
+use PHPMailer\PHPMailer\SMTP;
+use PHPMailer\PHPMailer\Exception;*/
+
+
 
 /*if ($_POST) {
   if (isset($_POST['g-recaptcha'])) {    
@@ -21,7 +27,7 @@ include_once("PHPMailer/src/Exception.php");
   // should return JSON with success as true  
 */
 
-if ($_POST) {
+if ($_POST) { /* es postback */
   $nombre = $_POST["txtNombre"];
   $correo = $_POST["txtCorreo"];
   $mensaje = $_POST["txtMensaje"];
@@ -29,15 +35,14 @@ if ($_POST) {
   if ($nombre != "" && $correo != "") {
     $mail = new PHPMailer();
     $mail->IsSMTP();
-    $mail->SMTPDebug = 2;
+    $mail->SMTPDebug = SMTP::DEBUG_SERVER;    
     $mail->SMTPAuth = true;
-    $mail->Host = "mail.depcsuite.com"; // SMTP a utilizar  
-    $mail->Username = "info@arnoldamorin.com.ar"; // Correo completo a utilizar
-    $mail->Password = "thv9b3vn";
-    $mail->SMTPSecure = "tls";                         
-    $mail->Port = 587; 
-    $mail->From = "info@arnoldamorin.com.ar"; //Desde la cuenta donde enviamos
-    $mail->FromName = "Arnold Amorin";
+    $mail->Host = 'mail.depcsuite.com'; // SMTP a utilizar
+    $mail->Username = 'info@arnoldamorin.com.ar'; // Correo completo a utilizar
+    $mail->Password = 'thv9b3vn';
+    $mail->Port = 25;   
+    $mail->From = 'info@arnoldamorin.com.ar'; //Desde la cuenta donde enviamos
+    $mail->FromName = 'Arnold Amorin';
     $mail->IsHTML(true);
     $mail->SMTPOptions = array(
       'ssl' => array(
@@ -48,23 +53,22 @@ if ($_POST) {
     );
     //Destinatarios
     $mail->addAddress($correo);
-    $mail->addReplyTo("info@arnoldamorin.com.ar");
     $mail->Subject = utf8_decode("Contacto página Web");
     $mail->Body = "Recibimos tu consulta, te responderemos a la brevedad.";
-    if (!$mail->send()) {
-      $msg = "Error al enviar el correo, intente nuevamente mas tarde." . $mail->ErrorInfo;      
+    if (!$mail->Send()) {
+      $msg = "Error al enviar el correo, intente nuevamente mas tarde.".$Mail->ErrorInfo;
     }
     $mail->ClearAllRecipients(); //Borra los destinatarios
 
     //Envía ahora un correo a nosotros con los datos de la persona
     $mail->addAddress("info@arnoldamorin.com.ar");
     $mail->Subject = utf8_decode("Recibiste un mensaje desde tu página Web");
-    $mail->Body = "Te escribio $nombre cuyo correo es $correo y el siguiente mensaje:<br><br>$mensaje";
+    $mail->Body = "Te escribio $nombre cuyo correo es $correo el siguiente mensaje:<br><br>$mensaje";
 
-    if ($mail->send()) { // Si fue enviado correctamente redirecciona */
-      header('Location:confirmacion-envio.php');
+    if ($mail->Send()) { /* Si fue enviado correctamente redirecciona */
+      header('Location: confirmacion-envio.php');
     } else {
-      $msg = "Error al enviar el correo, intente nuevamente mas tarde." . $mail->ErrorInfo;
+      $msg = "Error al enviar el correo, intente nuevamente mas tarde.";
     }
   } else {
     $msg = "Complete todos los campos";
@@ -100,7 +104,7 @@ if ($_POST) {
           </div>
           <div class="row">
             <div class="col-lg-6 col-10 form-group">
-              <div class="g-recaptcha" data-sitekey="6LdSuT8aAAAAACnNop88wUc6CQeibKmFYVhCZKTJ"></div>
+              <div class="g-recaptcha" data-sitekey=""></div>
             </div>
             <div class="col-lg-6 col-12 form-group">
               <div class="text-sm-left  text-lg-right text-center">
@@ -114,7 +118,7 @@ if ($_POST) {
         <?php }  ?>
       </div>
     </div>
-  </div> 
+  </div>
 </main>
 <?php
 include_once("footer.php"); ?>
