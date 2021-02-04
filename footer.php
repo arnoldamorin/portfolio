@@ -1,6 +1,6 @@
     <footer class="footer">
         <div class="container align-items-end flex-column">
-            <div class="row text-center w-100">
+            <div class="row text-center">
                 <div class="col-sm-3 col-12 colf">
                     <a href="https://github.com/arnoldamorin" target="_blank" title="Github"><i
                             class="fab fa-github"></i></a>

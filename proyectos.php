@@ -43,7 +43,7 @@ include_once("menu.php"); ?>
                         <div class="card-block">
                             <div class="row p-0 btn-proyectos w-100">
                                 <div class="col-sm-6 col-6 btn-col-p">
-                                    <a href="Proyectos/SGV/index.php" target="_blank" class="btn-p1 rounded-pill">VER PROYECTO</a>
+                                    <a href="Proyectos/SGV/login.php" target="_blank" class="btn-p1 rounded-pill">VER PROYECTO</a>
                                 </div>
                                 <div class="col-sm-6 col-6 btn-col-d">
                                     <a href="https://github.com/arnoldamorin/Sistema-de-ventas.git" target="_blank" class="btn-p2">CÓDIGO FUENTE</a>
